@@ -56,7 +56,10 @@ def read_data_csv():
             person_obj = Person(row[0], row[1], row[2], row[3], row[4])
 
             # add person object to the dictionary
-            person_dict[person_obj.id] = person_obj
+            if person_obj.id not in person_dict:
+                person_dict[person_obj.id] = person_obj
+            else:
+                print("This ID already exists.")
 
     return person_dict
 
