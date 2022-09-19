@@ -39,7 +39,7 @@ The notebook is [here](https://github.com/DylanPetrey/Human-Language-Technologie
 
 
 
-## Text Processing with Python
+## Guessing Game
 I had a ton of fun with this assignment. I had to use NLTK to extract the 50 most common nouns in the text file provided by the professor and create a word game out of it. The word game is similar to hangman, however you play until you miss 5 more letters than you get correct.
 
 ### Instructions
