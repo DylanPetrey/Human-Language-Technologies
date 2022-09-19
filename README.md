@@ -2,13 +2,13 @@
 This is my portfolio for CS 4395.001 at UT Dallas
 
 
-## Assignment 0
+## Overview of NLP
 This is my first assignment for the class. It required me to answer questions based on NLP
 
-My responses are [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Assignment%200/Homework0_MPetrey.pdf) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Assignment%200/Portfolio%20Component%200.pdf)
+My responses are [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Overview%20of%20NLP/homework0_mdp180000.pdf) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Overview%20of%20NLP/Portfolio%20Component%200.pdf)
 
 
-## Assignment 1
+## Text Processing with Python
 ### Overview
 This assignment reads in a CSV file and verifies that all of the data is uniform. If an entry does not follow the standard, then it will prompt the user to enter a new entry until it is follows the set standard.
 
@@ -22,4 +22,5 @@ A major strength that I found in using python is that it is much simplier to pro
 In this assignment I learned about applying regrex in a program. In the past I had to create it for Automata Theory, however, we need not actually use it in a program.
 
 
-My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Assignment%201/Homework1_MPetrey.py) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Assignment%201/Portfolio%20Component%201.pdf)
+My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Homework%201/homework1_mdp180000.py) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Homework%201/Portfolio%20Component%201.pdf)
+
