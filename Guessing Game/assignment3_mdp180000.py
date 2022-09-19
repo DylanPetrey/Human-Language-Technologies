@@ -71,10 +71,18 @@ def guessing_game(word_list):
         print('Guess a letter:  ', end=' ')
         guess = input()
 
+        # guess validation
+        while len(guess) != 1 or not (guess.isalpha() or guess == '!'):
+            print('Please enter one letter A-Z.')
+            print('Guess a letter:  ', end=' ')
+            guess = input()
+
         # Check for forced game end
         if guess == '!':
             print('Ending game')
             break
+
+        guess = guess.lower()
 
         # Process current guess
         if guess in target and guess not in current_progress:
