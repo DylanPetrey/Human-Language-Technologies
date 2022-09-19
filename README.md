@@ -21,6 +21,5 @@ A major strength that I found in using python is that it is much simplier to pro
 ### What I learned
 In this assignment I learned about applying regrex in a program. In the past I had to create it for Automata Theory, however, we need not actually use it in a program.
 
-
 My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Homework%201/homework1_mdp180000.py) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Homework%201/Portfolio%20Component%201.pdf)
 
