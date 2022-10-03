@@ -1,11 +1,12 @@
 import nltk
 import pickle
+import time
 from nltk import ngrams
 
 
 def get_ngram_dict(filename):
     # open the file
-    f = open(filename, 'r')
+    f = open(filename, 'r', encoding="utf8")
 
     # Read the input file and store into text
     raw_text = f.read()
@@ -31,6 +32,7 @@ def get_ngram_dict(filename):
 
 
 if __name__ == '__main__':
+    start = time.process_time()
     # Get the english dictionaries
     bigram_eng, unigram_eng = get_ngram_dict('ngram_files/LangId.train.English')
     with open('pickle_files/bigram_eng.pickle', 'wb') as handle:

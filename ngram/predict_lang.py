@@ -11,11 +11,12 @@ def compute_prob(text, unigram_dict, bigram_dict, vocab_size):
 
     # Uniform the text and remove punctuation
     unigrams_test = [token.lower() for token in unigrams_test if token.isalpha()]
-
     bigrams_test = list(ngrams(unigrams_test, 2))
 
+    # Probability counter
+    lang_prob = 0
+
     # calculates the probability for each bigram
-    lang_prob = 1
     for bigram in bigrams_test:
         uni = bigram[0]
 
@@ -23,7 +24,7 @@ def compute_prob(text, unigram_dict, bigram_dict, vocab_size):
         u = unigram_dict[uni] if uni in unigram_dict else 0
 
         # Laplace formula
-        lang_prob *= (b+1)/(u+vocab_size)
+        lang_prob += (b+1)/(u+vocab_size)
 
     return lang_prob
 
@@ -50,7 +51,7 @@ if __name__ == '__main__':
     total_vocab_size = len(unigram_eng) + len(unigram_fr) + len(unigram_it)
 
     # Open the test Wfile
-    test_file = open('ngram_files/LangId.test', 'r')
+    test_file = open('ngram_files/LangId.test', 'r', encoding="utf8")
     test_text = test_file.read()
     test_text = test_text.splitlines()
 
@@ -58,9 +59,6 @@ if __name__ == '__main__':
 
     # Calculate the probabilities for each line of test_text
     for line_number, line in enumerate(test_text):
-        if line_number == 23:
-            print('stop')
-
         # Get probabilities
         eng_prob = compute_prob(line, unigram_eng, bigram_eng, total_vocab_size)
         fr_prob = compute_prob(line, unigram_fr, bigram_fr, total_vocab_size)
@@ -77,3 +75,28 @@ if __name__ == '__main__':
             output_file.write(f'{line_number + 1} Undefined\n')
 
     output_file.close()
+
+    # Open the solution file
+    sol_file = open('ngram_files/LangId.sol', 'r', encoding="utf8")
+    sol_text = sol_file.read()
+    sol_text = sol_text.splitlines()
+
+    # Open the output file
+    ans_file = open('ngram_files/LangId.out', 'r', encoding="utf8")
+    ans_text = ans_file.read()
+    ans_text = ans_text.splitlines()
+
+    # Compare two files
+    correct = 0
+    incorrect = []
+    for line in range(len(sol_text)):
+        if sol_text[line] == ans_text[line]:
+            correct += 1
+        else:
+            incorrect.append(ans_text[line].split()[0])
+
+    # Output accuracy and missed lines
+    print(f'Accuracy = {correct / len(sol_text)}')
+    print('Missed lines: ')
+    for line in incorrect:
+        print(line)
