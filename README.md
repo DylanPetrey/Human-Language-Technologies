@@ -56,7 +56,7 @@ My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blo
 
 ## WordNet
 
-My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/wordnet/WordNet_mdp180000.ipynb) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/WordNet/Portfolio%20Chapter%207.pdf)
+My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/WordNet/WordNet_mdp180000.ipynb) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/WordNet/Portfolio%20Chapter%207.pdf)
 
 
 
@@ -64,7 +64,7 @@ My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blo
 
 ## N-grams
 
-Part 1 of my code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/ngram/predict_lang_mdp180000.py) and part 2 of my code is [here.](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/ngram/get_ngram_dicts_mdp180000.py) The assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/ngram/Portfolio%20Chapter%208.pdf)
+Part 1 of my code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/N-grams/get_ngram_dicts_mdp180000.py) and part 2 of my code is [here.](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/N-grams/predict_lang_mdp180000.py) The assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/N-grams/Portfolio%20Chapter%208.pdf)
 
 
 
