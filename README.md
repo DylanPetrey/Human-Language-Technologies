@@ -49,3 +49,27 @@ Example command:
 py assignment3_mdp180000.py anat19.txt
 
 My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Guessing%20Game/assignment3_mdp180000.py) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Guessing%20Game/Portfolio%20Chapter%205.pdf)
+
+
+
+
+
+## WordNet
+
+My code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/wordnet/WordNet_mdp180000.ipynb) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/WordNet/Portfolio%20Chapter%207.pdf)
+
+
+
+
+
+## N-grams
+
+Part 1 of my code is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/ngram/predict_lang_mdp180000.py) and part 2 of my code is [here.](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/ngram/get_ngram_dicts_mdp180000.py) The assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/ngram/Portfolio%20Chapter%208.pdf)
+
+
+
+
+
+## Web Crawler
+
+My code is [here,](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Web%20Crawler/web_crawler_mdp180000.py) my writeup is [here,](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Web%20Crawler/web_crawler_writeup_mdp180000.pdf) and the assignment description is [here](https://github.com/DylanPetrey/Human-Language-Technologies/blob/main/Web%20Crawler/Portfolio%20Chapter%2012.pdf)
