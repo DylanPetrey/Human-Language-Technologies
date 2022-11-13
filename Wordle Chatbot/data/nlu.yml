@@ -1,0 +1,146 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Greetings
+    - HELLO
+    - HI
+    - Hello
+    - Hello!
+    - Hey
+    - Hi
+    - Hi there!
+    - Hi!
+    - How are you doing?
+    - How are you?
+    - How do you do?
+    - How you doin
+    - How's it going?
+    - Howdie
+    - I'm very pleased to meet you
+    - Pleased to meet you
+    - Wassup!!!
+    - Wassup?
+    - What's up?
+    - greetings
+    - hello
+    - hello my friend
+    - hi
+    - hi my friend
+    - how are you
+    - how are you doing?
+    - how u doing
+    - how you
+    - how you doin?
+    - howdie
+    - hows it going
+    - it's a pleasure to meet you
+    - wassup
+    - wassup dude?
+    - what happening
+    - what's up
+    - hallo
+    - can ye hear me
+    - how's it going
+    - How are you today
+    - can you hear me
+    - sup
+    - yo
+    - hello again
+    - I'm back
+
+- intent: name
+  examples: |
+    - I am [Dylan](name)
+    - My name is [Anna](name)
+    - I am [John](name)
+    - [Jason](name)
+    - Name is [Nick](name)
+    - I am [Peter](name)  
+    - my name is [Ann](name)
+    - Myself [Joey](name)
+
+- intent: goodbye
+  examples: |
+    - bye
+    - Bye now!
+    - Bye!
+    - dismiss
+    - Enough
+    - Go away
+    - go away!
+    - Goodbye
+    - gotta go
+    - I'm done
+    - I'm finished
+    - Later
+    - Laters
+    - No more questions
+    - Quit
+    - Stop
+    - That's all thanks
+    - That's enough for today
+    - thats all thanks
+    - Outta here
+    - no more questions
+    - i've got no more questions
+    - dismissed
+    - i've got to go
+    - Gotta go
+    - go away
+    - that's enough for to day
+    - stop
+
+
+- intent: affirm
+  examples: |
+    - Yes
+    - YES
+    - Yes!
+    - yes
+    - Yup
+    - y
+    - Affirmative
+    - That's right
+    - Indeed
+    - indeed
+    - exactly
+    - Exactly
+    - correct
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - No
+    - No!
+    - NO
+    - no
+    - I don't agree
+    - That's wrong
+    - You didn't understand me
+    - You don't understand me
+    - you dont understand me
+    - That's incorrect
+    - That isn't right
+    - That isn't what I said
+    - Incorrect
+    - You misunderstood me
+    - You misheard me
+    - You got that wrong
+    - no that's wrong
+    - you messed that one up
+    - that's not right
+    - you've got that wrong
+    - he misunderstood
+    - incorrect
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

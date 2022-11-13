@@ -1,0 +1,63 @@
+version: "3.1"
+
+intents:
+  - greet
+  - name
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+
+actions:
+  - action_get_user_name
+
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+
+responses:
+  utter_greet:
+  - text: "Welcome! May I get your name?"
+  - text: "Hi! What is your name?"
+  
+  utter_start_game:
+  - text: "Would you like to play wordle?"
+  - text: "Would you like to play wordle with me?"
+
+  utter_rejected:
+  - text: "Why are you here then?"
+  - text: "Please"
+  - text: "Why not??"
+  - text: "It'll be fun!"
+  - text: "Let's play wordle :("
+  - text: "Why do you hate me?"
+  - text: "You can go ahead and log out then."
+  - text: "Go away."
+  - text: "Go to bed."
+  - text: "I think you secretly want to."
+  - text: "That's not very nice."
+
+  utter_started:
+  - text: "Ok! Let us begin."
+  - text: "Thank you for choosing to have fun with me."
+  - text: "I'm excited!"
+  - text: "Let's get started!"
+
+  utter_pick_word:
+  - text: "Let me pick out a word real quick."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
