@@ -21,3 +21,4 @@ stories:
   - intent: affirm
   - action: utter_started
   - action: utter_pick_word
+  - action: action_pick_random_word

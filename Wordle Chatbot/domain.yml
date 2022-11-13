@@ -10,6 +10,7 @@ intents:
 
 actions:
   - action_get_user_name
+  - action_pick_random_word
 
 entities:
   - name
@@ -20,6 +21,14 @@ slots:
     mappings:
       - type: from_entity
         entity: name
+  target:
+    type: text
+    mappings:
+      - type: custom
+  word_bank:
+    type: list
+    mappings:
+      - type: custom
 
 responses:
   utter_greet:
