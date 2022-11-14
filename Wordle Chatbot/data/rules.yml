@@ -1,13 +1,18 @@
 version: "3.1"
 
 rules:
-  - rule: Say 'I am a bot' anytime the user challenges
-    steps:
-    - intent: bot_challenge
-    - action: utter_iamabot
+- rule: get user information
+  conversation_start: true 
+  steps:
+    - intent: greet
+    - action: action_get_user_name
+    - action: utter_welcome_message
+    - action: utter_pick_word
+    - action: action_pick_random_word
+    - action: utter_repeat_target
 
-  - rule: Say goodbye anytime the user says goodbye
-    steps:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
     - intent: goodbye
     - action: utter_goodbye
 

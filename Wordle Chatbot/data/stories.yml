@@ -2,23 +2,8 @@ version: "3.1"
 
 stories:
 
-- story: No fun path
+- story: play wordle
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: name
-  - action: action_get_user_name
-  - intent: deny
-  - action: utter_rejected
-
-
-- story: fun path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: name
-  - action: action_get_user_name
-  - intent: affirm
-  - action: utter_started
-  - action: utter_pick_word
-  - action: action_pick_random_word
+  - intent: user_guess
+  - action: utter_repeat_guess
+  

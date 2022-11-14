@@ -44,22 +44,10 @@ nlu:
     - can ye hear me
     - how's it going
     - How are you today
-    - can you hear me
     - sup
     - yo
     - hello again
     - I'm back
-
-- intent: name
-  examples: |
-    - I am [Dylan](name)
-    - My name is [Anna](name)
-    - I am [John](name)
-    - [Jason](name)
-    - Name is [Nick](name)
-    - I am [Peter](name)  
-    - my name is [Ann](name)
-    - Myself [Joey](name)
 
 - intent: goodbye
   examples: |
@@ -74,8 +62,6 @@ nlu:
     - gotta go
     - I'm done
     - I'm finished
-    - Later
-    - Laters
     - No more questions
     - Quit
     - Stop
@@ -93,54 +79,56 @@ nlu:
     - stop
 
 
-- intent: affirm
+- intent: user_guess
   examples: |
-    - Yes
-    - YES
-    - Yes!
-    - yes
-    - Yup
-    - y
-    - Affirmative
-    - That's right
-    - Indeed
-    - indeed
-    - exactly
-    - Exactly
-    - correct
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - [zebra](valid_guess)
+    - [friar](valid_guess)
+    - [agape](valid_guess)
+    - [slate](valid_guess)
+    - [trade](valid_guess)
+    - [adept](valid_guess)
+    - [wrung](valid_guess)
+    - [chide](valid_guess)
+    - [sting](valid_guess)
+    - [hovel](valid_guess)
+    - [manga](valid_guess)
+    - [jumbo](valid_guess)
+    - [chute](valid_guess)
+    - [gloss](valid_guess)
+    - [ashen](valid_guess)
+    - [flyer](valid_guess)
+    - [nylon](valid_guess)
+    - [again](valid_guess)
+    - [breed](valid_guess)
+    - [fugue](valid_guess)
+    - [shard](valid_guess)
+    - [comma](valid_guess)
+    - [alter](valid_guess)
+    - [patty](valid_guess)
+    - [cairn](valid_guess)
+    - [siren](valid_guess)
+    - [dingy](valid_guess)
+    - [homer](valid_guess)
+    - [renew](valid_guess)
+    - [arena](valid_guess)
+    - [south](valid_guess)
+    - [crown](valid_guess)
+    - [smirk](valid_guess)
+    - [niece](valid_guess)
+    - [ethos](valid_guess)
+    - [unfit](valid_guess)
+    - [plied](valid_guess)
+    - [ranch](valid_guess)
+    - [email](valid_guess)
+    - [facet](valid_guess)
+    - [nylon](valid_guess)
+    - [waltz](valid_guess)
+    - [filmy](valid_guess)
+    - [frill](valid_guess)
+    - [krill](valid_guess)
+    - [flunk](valid_guess)
+    - [anode](valid_guess)
+    - [cliff](valid_guess)
+    - [tuber](valid_guess)
+    - [argue](valid_guess)
 
-- intent: deny
-  examples: |
-    - No
-    - No!
-    - NO
-    - no
-    - I don't agree
-    - That's wrong
-    - You didn't understand me
-    - You don't understand me
-    - you dont understand me
-    - That's incorrect
-    - That isn't right
-    - That isn't what I said
-    - Incorrect
-    - You misunderstood me
-    - You misheard me
-    - You got that wrong
-    - no that's wrong
-    - you messed that one up
-    - that's not right
-    - you've got that wrong
-    - he misunderstood
-    - incorrect
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?

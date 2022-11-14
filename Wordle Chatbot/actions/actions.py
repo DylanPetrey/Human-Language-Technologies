@@ -13,8 +13,9 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
-import csv
-from csv import writer 
+import os
+from pathlib import Path
+
 import random
 import time
 
@@ -25,29 +26,18 @@ class ActionGetUserName(Action):
       return "action_get_user_name"
 
    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-      name= tracker.get_slot("name")
-      
-      msg = ""
-      with open('actions\\Resources\\user_info.csv', 'rt') as f:
-         reader = csv.reader(f, delimiter=',')
-         for row in reader:
-            if name == row[0]:
-               msg= "Welcome back {}! Are you ready to play wordle?".format(name)
-               dispatcher.utter_message(text=msg)
-               return []
+      name=os.getlogin()
 
-      self.initilize_user(name)
-      msg="Hello {}! Would you like to play wordle?".format(name)
-      dispatcher.utter_message(text=msg)
+      user_file = Path("actions\\Resources\\Users\\{}.txt".format(name))
+      if not user_file.is_file():
+         with open(user_file, 'w') as f:
+            f.writelines(name)
+            dispatcher.utter_message(text="Welcome to wordle!")
+
+      else:
+         dispatcher.utter_message(text="Welcome back! Lets play some wordle!")
 
       return []
-
-   def initilize_user(self, name: str):
-      data = [name, '0', '0', '0', '0', '0', '0', '0']
-      with open('actions\\Resources\\user_info.csv', 'a', newline ='') as f_object:
-         csv_writer  = writer(f_object)
-         csv_writer.writerow(data)
-         f_object.close()
 
 
 def getWordBank():
@@ -69,7 +59,6 @@ class ActionPickRandomWord(Action):
 
       random.seed(time.time())
       target_word = word_bank[random.randint(0, len(word_bank))]
-      SlotSet("target", target_word)
-      dispatcher.utter_message(text="I picked the word {}".format(tracker.get_slot("target_word")))
-      return []
+      dispatcher.utter_message(text="I picked the word {}".format(target_word))
+      return [SlotSet("word_bank", word_bank), SlotSet("target", target_word)]
 
