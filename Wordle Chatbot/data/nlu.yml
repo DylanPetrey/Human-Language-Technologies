@@ -1,53 +1,44 @@
 version: "3.1"
 
 nlu:
+
 - intent: greet
   examples: |
-    - Greetings
-    - HELLO
-    - HI
-    - Hello
-    - Hello!
-    - Hey
-    - Hi
-    - Hi there!
-    - Hi!
-    - How are you doing?
-    - How are you?
-    - How do you do?
-    - How you doin
-    - How's it going?
-    - Howdie
-    - I'm very pleased to meet you
-    - Pleased to meet you
-    - Wassup!!!
-    - Wassup?
-    - What's up?
-    - greetings
+    - hey
     - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - greetings
+    - hi, how are you
     - hello my friend
-    - hi my friend
-    - how are you
-    - how are you doing?
-    - how u doing
-    - how you
-    - how you doin?
-    - howdie
-    - hows it going
-    - it's a pleasure to meet you
-    - wassup
-    - wassup dude?
     - what happening
-    - what's up
-    - hallo
-    - can ye hear me
-    - how's it going
-    - How are you today
-    - sup
-    - yo
-    - hello again
-    - I'm back
 
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
 
 - intent: user_guess
   examples: |

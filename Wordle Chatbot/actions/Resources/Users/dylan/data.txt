@@ -1,0 +1,14 @@
+actions/Resources/Users/dylan
+$guess_history_file=actions/Resources/Users/dylan/guess_history.txt
+$answer_history_file=actions/Resources/Users/dylan/answer_history.txt
+$system_user_name=dylan
+$initial_login=11/15/2022, 17:07
+$most_recent_login=11/15/2022, 17:14
+$total_num_games=2
+$total_num_wins=1
+$correct_guess_1=0
+$correct_guess_2=0
+$correct_guess_3=1
+$correct_guess_4=0
+$correct_guess_5=0
+$correct_guess_6=0

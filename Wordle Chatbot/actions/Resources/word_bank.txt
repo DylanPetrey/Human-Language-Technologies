@@ -971,7 +971,6 @@ hedge
 hefty
 heist
 helix
-hello
 hence
 heron
 hilly
