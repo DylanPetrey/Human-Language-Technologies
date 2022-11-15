@@ -2,8 +2,7 @@ version: "3.1"
 
 stories:
 
-- story: play wordle
+- story: make guess
   steps:
   - intent: user_guess
-  - action: utter_repeat_guess
-  
+  - action: action_make_guess

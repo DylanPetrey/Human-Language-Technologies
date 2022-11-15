@@ -8,24 +8,34 @@ intents:
 actions:
   - action_get_user_name
   - action_pick_random_word
+  - action_make_guess
 
 entities:
   - valid_guess
-
 slots:
   guess:
     type: text
     mappings:
-      - type: from_entity
-        entity: valid_guess
+    - type: from_entity
+      entity: valid_guess
   target:
     type: text
     mappings:
-      - type: custom
-  word_bank:
+    - type: custom
+  guess_list:
     type: list
+    initial_value: []
     mappings:
-      - type: custom
+    - type: custom
+  guess_num:
+    type: float
+    initial_value: 0
+    mappings:
+    - type: custom
+  game_end:
+    type: bool
+    mappings:
+    - type: custom
 
 responses:
   utter_welcome_message:
