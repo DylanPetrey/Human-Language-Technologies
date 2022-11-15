@@ -48,35 +48,6 @@ nlu:
     - hello again
     - I'm back
 
-- intent: goodbye
-  examples: |
-    - bye
-    - Bye now!
-    - Bye!
-    - dismiss
-    - Enough
-    - Go away
-    - go away!
-    - Goodbye
-    - gotta go
-    - I'm done
-    - I'm finished
-    - No more questions
-    - Quit
-    - Stop
-    - That's all thanks
-    - That's enough for today
-    - thats all thanks
-    - Outta here
-    - no more questions
-    - i've got no more questions
-    - dismissed
-    - i've got to go
-    - Gotta go
-    - go away
-    - that's enough for to day
-    - stop
-
 
 - intent: user_guess
   examples: |

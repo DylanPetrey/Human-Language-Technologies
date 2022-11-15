@@ -17,7 +17,7 @@ class Backgrounds:
       ok = '\33[42m'
       maybe = '\33[43m'
       wrong = '\33[41m'
-      reset = "\033[0m"
+      reset = '\033[0m'
 
 
 class ActionGetUserName(Action):
@@ -90,10 +90,18 @@ class ActionMakeGuess(Action):
       current_guess = tracker.get_slot("guess")
       current_board = tracker.get_slot("guess_list")
       target_word = tracker.get_slot("target")
+      guess_num = tracker.get_slot("guess_num")
 
       current_board += [current_guess]
+      guess_num = len(current_board)
+      print(guess_num)
 
       print_board(dispatcher, current_board, target_word)
+      
+      if current_guess == target_word and not guess_num > 6:
+         dispatcher.utter_message(text='Congrats! You found the word!')
+      elif guess_num > 6:
+         dispatcher.utter_message(text='You lost!')
 
       return [SlotSet("guess_list", current_board)]
 

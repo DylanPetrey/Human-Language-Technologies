@@ -3,7 +3,6 @@ version: "3.1"
 intents:
   - greet
   - user_guess
-  - goodbye
 
 actions:
   - action_get_user_name
@@ -46,9 +45,6 @@ responses:
 
   utter_repeat_guess:
   - text: You guessed {guess}
-
-  utter_goodbye:
-  - text: "Bye"
 
   utter_repeat_target:
   - text: "{target}"

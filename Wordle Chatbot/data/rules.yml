@@ -11,8 +11,3 @@ rules:
   - action: utter_pick_word
   - action: action_pick_random_word
   - action: utter_repeat_target
-
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-    - intent: goodbye
-    - action: utter_goodbye
