@@ -6,3 +6,6 @@ stories:
   steps:
   - intent: user_guess
   - action: action_make_guess
+  - slot_was_set:
+    - game_end: false
+

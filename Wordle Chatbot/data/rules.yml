@@ -11,3 +11,19 @@ rules:
   - action: utter_pick_word
   - action: action_pick_random_word
   - action: utter_repeat_target
+
+
+- rule: restart wordle
+  condition:
+  - slot_was_set:
+    - game_end: true
+  steps:
+    - intent: affirm
+    - action: action_reset_wordle
+    - action: utter_welcome_message
+    - action: utter_pick_word
+    - action: action_pick_random_word
+    - action: utter_repeat_target
+    - action: action_reset_game_end
+
+

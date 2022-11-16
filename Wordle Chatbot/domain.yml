@@ -10,6 +10,8 @@ actions:
   - action_get_user_name
   - action_pick_random_word
   - action_make_guess
+  - action_reset_wordle
+  - action_reset_game_end
 
 entities:
   - valid_guess

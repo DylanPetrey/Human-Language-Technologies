@@ -6,6 +6,7 @@ from typing import Any, Dict, List, Text
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+from rasa_sdk.events import AllSlotsReset
 
 import fileinput
 import sys
@@ -161,6 +162,9 @@ class ActionMakeGuess(Action):
       target_word = tracker.get_slot("target")
       guess_num = tracker.get_slot("guess_num")
       user_file = tracker.get_slot("user_file")
+
+      if current_guess == None:
+         return []
       
       if len(current_board) != 0 and current_guess == current_board[len(current_board)-1]:
          dispatcher.utter_message(text='Im sorry, but that word is not in my word bank.')
@@ -177,9 +181,28 @@ class ActionMakeGuess(Action):
       if current_guess == target_word and not guess_num > 6:
          user_file_increment_value(user_file, 'correct_guess_' + str(guess_num))
          user_file_increment_value(user_file, 'total_num_wins')
-         dispatcher.utter_message(text='Congrats! You found the word!')
+         dispatcher.utter_message(text='Congrats! You found the word! Would you like to play again?')
+         return[SlotSet("game_end", True)]
       elif guess_num > 6:
-         dispatcher.utter_message(text='You lost!')
+         dispatcher.utter_message(text='You lost! Would you like to play again?')
+         return [SlotSet("guess_list", current_board), SlotSet("game_end", True)]
+
 
       return [SlotSet("guess_list", current_board)]
 
+class ActionMakeGuess(Action):
+   def name(self) -> Text:
+      return "action_reset_wordle"
+      
+   def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+      user_file = tracker.get_slot("user_file")
+
+      dispatcher.utter_message(text='Resetting wordle')
+      return [SlotSet("guess", None), SlotSet("target", None), SlotSet("guess_list", []), SlotSet("guess_num", 0)]
+
+class ActionMakeGuess(Action):
+   def name(self) -> Text:
+      return "action_reset_game_end"
+      
+   def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+      return [SlotSet("game_end", None)]
