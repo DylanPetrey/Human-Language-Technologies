@@ -4,7 +4,9 @@ intents:
   - greet
   - affirm
   - deny
+  - ask_POS
   - user_guess
+  - ask_for_answers
 
 actions:
   - action_get_user_name
@@ -12,6 +14,8 @@ actions:
   - action_make_guess
   - action_reset_wordle
   - action_reset_game_end
+  - action_get_POS
+  - action_suggest_words
 
 entities:
   - valid_guess
@@ -54,8 +58,14 @@ responses:
   utter_repeat_guess:
   - text: You guessed {guess}
 
-  utter_repeat_target:
-  - text: "{target}"
+  utter_ready_to_start:
+  - text: "I have picked a word. Please guess with a 5 letter word."
+  
+  utter_reset_message:
+  - text: "The game has been reset. Feel free to start guessing!"
+
+  utter_end_msg:
+  - text: "Ok! Thank you for playing. Say yes if you change your mind."
 
 session_config:
   session_expiration_time: 60

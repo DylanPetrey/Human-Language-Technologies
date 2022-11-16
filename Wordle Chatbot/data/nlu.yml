@@ -41,6 +41,33 @@ nlu:
     - no way
     - not really
 
+- intent: ask_POS
+  examples: |
+    - what is the POS
+    - what is the POS for the answer
+    - what is the part of speech
+    - what is the part of speech for the answer
+    - part of speech
+    - POS
+    - is it a noun
+    - is it a verb
+    - is it an adjective
+    - is the word a noun
+    - is the word a verb
+    - is the word a adjective
+    - can you help me with the POS
+    - can you help me with the part of speech
+    - I need help with the POS
+    - I need help with the part of speech
+
+- intent: ask_for_answers
+  examples: |
+   - I am stuck
+   - I can't think of any words
+   - what are some words I can use
+   - do you have any ideas
+   - please help me 
+
 - intent: user_guess
   examples: |
     - [zebra](valid_guess)

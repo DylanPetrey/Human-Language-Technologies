@@ -2,66 +2,159 @@ version: "3.1"
 nlu:
   - lookup: valid_guess
     examples: |
+      - aalii
+      - abaca
       - aback
+      - abaft
+      - abamp
       - abase
+      - abash
       - abate
       - abbey
+      - abbes
       - abbot
+      - abeam
+      - abele
+      - abets
       - abhor
       - abide
-      - abled
-      - abode
-      - abort
-      - about
-      - above
-      - abuse
+      - abies
+      - abysm
       - abyss
+      - abler
+      - abmho
+      - abode
+      - abohm
+      - abort
+      - abuse
+      - abuts
+      - abuzz
+      - acari
+      - accel
+      - accel
+      - acerb
+      - ached
+      - aches
+      - achoo
+      - acids
+      - acing
+      - acini
+      - acmes
+      - acned
       - acorn
+      - acred
+      - acres
       - acrid
+      - acted
+      - actin
       - actor
       - acute
       - adage
       - adapt
+      - addax
+      - added
+      - adder
+      - addle
       - adept
+      - adieu
+      - adios
+      - adits
+      - adman
+      - admen
       - admin
       - admit
+      - admix
       - adobe
       - adopt
       - adore
       - adorn
+      - adown
       - adult
+      - adust
+      - adzes
+      - aecia
+      - aedes
+      - aegis
+      - aeons
+      - aerie
+      - aeron
+      - aeron
       - affix
       - afire
       - afoot
+      - afore
       - afoul
-      - after
-      - again
+      - afrit
+      - agama
       - agape
       - agate
+      - agave
       - agent
+      - agger
+      - aggie
+      - aggro
       - agile
       - aging
+      - agios
+      - agist
+      - agley
+      - aglet
       - aglow
+      - agone
       - agony
+      - agora
       - agree
+      - agric
+      - agric
+      - agron
+      - agron
       - ahead
+      - ayahs
+      - aided
       - aider
+      - aides
+      - ayins
+      - ailed
+      - aimed
+      - aioli
+      - aired
+      - airts
       - aisle
+      - aitch
+      - akees
+      - akene
+      - alack
+      - alary
       - alarm
+      - alate
       - album
+      - alder
+      - aldol
+      - aleph
       - alert
       - algae
+      - algal
+      - algid
+      - algin
+      - algor
+      - alias
       - alibi
       - alien
       - align
       - alike
       - alive
+      - alkyd
+      - alkyl
       - allay
       - alley
+      - allyl
+      - alloy
       - allot
       - allow
-      - alloy
+      - aloes
       - aloft
+      - aloha
+      - aloin
       - alone
       - along
       - aloof
@@ -69,287 +162,803 @@ nlu:
       - alpha
       - altar
       - alter
+      - altos
+      - alula
+      - alums
+      - amahs
+      - amain
       - amass
       - amaze
       - amber
+      - ambit
       - amble
+      - ambos
+      - ambry
+      - ameba
       - amend
+      - ament
+      - amice
+      - amide
+      - amigo
+      - amine
+      - amino
+      - amirs
       - amiss
       - amity
       - among
+      - amour
       - ample
       - amply
+      - amuck
       - amuse
+      - ancon
+      - anear
+      - anele
+      - anent
       - angel
       - anger
       - angle
       - angry
       - angst
+      - anile
+      - anils
+      - anima
       - anime
+      - anion
+      - anise
+      - ankhs
       - ankle
+      - ankus
+      - annal
+      - annas
       - annex
       - annoy
       - annul
+      - anoas
       - anode
+      - anole
+      - anted
+      - antes
       - antic
+      - antiq
+      - antiq
+      - antis
+      - antre
+      - antsy
       - anvil
       - aorta
+      - apace
       - apart
+      - apeak
+      - apery
       - aphid
+      - aphis
+      - apian
       - aping
+      - apish
       - apnea
+      - aport
+      - appel
       - apple
       - apply
       - apron
+      - apses
+      - apsis
+      - apter
       - aptly
+      - aquas
+      - araks
       - arbor
+      - arced
+      - archt
+      - archt
+      - ardeb
       - ardor
+      - areal
+      - areas
+      - areca
       - arena
+      - arete
+      - argal
+      - argil
+      - argol
+      - argon
+      - argot
       - argue
+      - arias
+      - ariel
+      - arils
       - arise
+      - armed
+      - armet
       - armor
+      - aroid
       - aroma
       - arose
       - array
+      - arras
+      - arris
       - arrow
+      - arsis
       - arson
+      - artel
       - artsy
+      - arums
       - ascot
+      - ascus
+      - asdic
+      - ashed
       - ashen
+      - ashes
       - aside
+      - asked
+      - asker
       - askew
+      - aspen
+      - asper
+      - aspic
+      - assai
       - assay
+      - asses
       - asset
+      - assoc
+      - assoc
+      - aster
+      - astir
+      - atilt
+      - atlas
+      - atman
       - atoll
+      - atomy
+      - atoms
       - atone
+      - atony
+      - atria
+      - atrip
+      - attar
       - attic
       - audio
       - audit
+      - auger
+      - aught
       - augur
-      - aunty
+      - aulic
+      - aulos
+      - aunts
+      - aural
+      - aurar
+      - auras
+      - auric
+      - aurum
+      - autos
+      - auxin
       - avail
+      - avast
+      - avens
+      - avers
       - avert
       - avian
+      - avion
       - avoid
+      - avoir
+      - avoir
+      - avows
       - await
       - awake
       - award
       - aware
       - awash
       - awful
+      - awing
+      - awned
       - awoke
       - axial
+      - axils
+      - axing
       - axiom
-      - axion
+      - axles
+      - axons
+      - azide
+      - azine
+      - azoic
+      - azole
+      - azote
+      - azoth
       - azure
+      - baaed
+      - babas
+      - babel
+      - babes
+      - babul
+      - baccy
+      - backs
       - bacon
+      - baddy
       - badge
       - badly
       - bagel
       - baggy
+      - bahts
+      - bayed
+      - bails
+      - bayou
+      - bairn
+      - baits
+      - baiza
+      - baize
+      - baked
       - baker
+      - bakes
+      - balas
+      - baldy
+      - balds
+      - baled
       - baler
+      - bales
+      - balky
+      - balks
+      - bally
+      - balls
       - balmy
+      - balms
+      - balsa
       - banal
+      - bandy
+      - bands
+      - banes
+      - bangs
       - banjo
+      - banks
+      - banns
+      - barbs
+      - barde
+      - bards
+      - bared
+      - barer
+      - bares
+      - barfs
       - barge
+      - baric
+      - barye
+      - barit
+      - barit
+      - barks
+      - barmy
+      - barms
+      - barns
       - baron
+      - barre
       - basal
+      - based
+      - baser
+      - bases
       - basic
       - basil
       - basin
       - basis
+      - basks
+      - basso
       - baste
       - batch
+      - bated
+      - bates
       - bathe
+      - baths
+      - batik
       - baton
       - batty
+      - bauds
       - bawdy
-      - bayou
+      - bawds
+      - bawls
+      - bazar
       - beach
       - beady
+      - beads
+      - beaks
+      - beamy
+      - beams
+      - beano
+      - beans
       - beard
+      - bears
       - beast
+      - beats
+      - beaus
+      - beaut
+      - beaux
+      - bebop
+      - becks
+      - bedel
+      - bedew
+      - bedim
       - beech
       - beefy
+      - beefs
+      - beeps
+      - beery
+      - beers
+      - beets
       - befit
+      - befog
       - began
       - begat
       - beget
       - begin
+      - begot
+      - begum
       - begun
-      - being
+      - beige
+      - belay
       - belch
+      - belga
       - belie
       - belle
       - belly
-      - below
+      - bells
+      - belts
+      - bemas
       - bench
+      - bendy
+      - bends
+      - benne
+      - benny
+      - bents
       - beret
+      - bergs
+      - beryl
+      - berks
+      - berms
       - berry
       - berth
       - beset
+      - besom
+      - besot
+      - bests
+      - betas
       - betel
+      - beths
+      - betta
       - bevel
+      - bevvy
       - bezel
+      - bhang
+      - bialy
       - bible
       - bicep
       - biddy
+      - bides
+      - bidet
+      - bield
+      - biers
+      - biffs
+      - bifid
+      - bight
       - bigot
+      - bijou
+      - biked
+      - biker
+      - bikes
+      - bylaw
+      - bilbo
       - bilge
+      - bilks
       - billy
+      - bills
+      - bimah
+      - bimbo
+      - binal
+      - binds
+      - bines
       - binge
       - bingo
       - biome
+      - biota
+      - biped
+      - bipod
       - birch
+      - birds
+      - byres
+      - birls
+      - birrs
       - birth
+      - bises
       - bison
+      - bitch
+      - biter
+      - bites
+      - bytes
       - bitty
+      - bitts
+      - byway
+      - blabs
       - black
       - blade
+      - blahs
+      - blain
       - blame
       - bland
       - blank
       - blare
+      - blase
       - blast
+      - blate
+      - blats
       - blaze
       - bleak
+      - blear
       - bleat
+      - blebs
       - bleed
       - bleep
       - blend
       - bless
       - blimp
       - blind
+      - blini
       - blink
+      - blips
       - bliss
       - blitz
       - bloat
+      - blobs
       - block
+      - blocs
       - bloke
       - blond
       - blood
       - bloom
+      - bloop
+      - blots
+      - blowy
       - blown
+      - blows
+      - blued
+      - bluey
       - bluer
+      - blues
+      - bluet
       - bluff
       - blunt
       - blurb
+      - blurs
       - blurt
       - blush
       - board
+      - boars
+      - boart
       - boast
+      - boats
       - bobby
-      - boney
+      - bocce
+      - bocci
+      - boded
+      - bodes
+      - bodge
+      - boffo
+      - bogey
+      - boggy
+      - bogie
+      - bogle
+      - bogus
+      - boyar
+      - boyla
+      - boils
+      - bolas
+      - boles
+      - bolls
+      - bolos
+      - bolts
+      - bolus
+      - bombe
+      - bombs
+      - bonce
+      - bonds
+      - boned
+      - boner
+      - bones
       - bongo
+      - bongs
+      - bonks
+      - bonne
+      - bonny
       - bonus
+      - bonze
       - booby
+      - boobs
+      - booed
+      - books
+      - booms
+      - boong
+      - boons
+      - boors
       - boost
       - booth
       - booty
+      - boots
       - booze
       - boozy
+      - borak
       - borax
+      - bored
+      - borer
+      - bores
+      - boric
       - borne
+      - boron
+      - bosky
       - bosom
+      - boson
       - bossy
+      - bosun
       - botch
+      - botel
+      - bothy
       - bough
       - boule
       - bound
+      - bouse
+      - bouts
+      - bovid
+      - bowed
       - bowel
+      - bower
+      - bowls
+      - bowse
+      - boxed
+      - boxen
       - boxer
+      - boxes
+      - bozos
       - brace
+      - brach
+      - bract
+      - brads
+      - braes
+      - brags
       - braid
+      - brail
       - brain
+      - brays
       - brake
       - brand
+      - brant
       - brash
       - brass
+      - brats
       - brave
       - bravo
       - brawl
       - brawn
+      - braxy
+      - braze
       - bread
       - break
+      - bream
+      - brede
       - breed
+      - brent
+      - breve
+      - brews
       - briar
       - bribe
       - brick
       - bride
       - brief
+      - brier
+      - brigs
+      - brill
+      - brims
       - brine
       - bring
-      - brink
       - briny
+      - brink
       - brisk
+      - brits
       - broad
+      - broch
+      - brock
       - broil
       - broke
+      - bronc
       - brood
       - brook
       - broom
+      - brose
       - broth
       - brown
+      - brows
+      - bruin
+      - bruit
+      - brume
       - brunt
       - brush
       - brute
+      - bubal
+      - bubba
+      - bucko
+      - bucks
       - buddy
       - budge
+      - bueno
+      - buffo
+      - buffs
       - buggy
       - bugle
+      - buhls
+      - buyer
       - build
       - built
+      - bulbs
       - bulge
+      - bulgy
       - bulky
+      - bulks
+      - bulla
       - bully
+      - bulls
+      - bumph
+      - bumpy
+      - bumps
       - bunch
+      - bunco
+      - bungs
+      - bunko
+      - bunks
       - bunny
+      - bunts
+      - buoys
+      - buran
+      - burbs
+      - buret
+      - burgh
+      - burgs
+      - burin
+      - burka
+      - burke
       - burly
+      - burls
+      - burns
       - burnt
+      - burps
+      - burry
+      - burro
+      - burrs
+      - bursa
+      - burse
       - burst
+      - busby
       - bused
+      - buses
       - bushy
+      - busks
+      - busty
+      - busts
       - butch
+      - buteo
+      - butyl
       - butte
+      - butty
+      - butts
+      - butut
       - buxom
-      - buyer
-      - bylaw
+      - bwana
       - cabal
       - cabby
+      - caber
       - cabin
       - cable
+      - cabob
       - cacao
       - cache
       - cacti
-      - caddy
       - cadet
+      - cadge
+      - cadre
+      - cafes
+      - caged
       - cagey
+      - cager
+      - cages
+      - caird
       - cairn
+      - caked
+      - cakes
+      - calyx
+      - calks
+      - calla
+      - calls
+      - calms
+      - calve
       - camel
       - cameo
+      - campy
+      - campo
+      - camps
       - canal
       - candy
+      - caned
+      - caner
+      - canes
+      - canna
       - canny
       - canoe
       - canon
+      - canso
+      - canst
+      - canty
+      - canto
+      - cants
+      - caped
       - caper
+      - capes
+      - capon
+      - capos
       - caput
       - carat
+      - carbs
+      - cards
+      - cared
+      - carer
+      - cares
+      - caret
       - cargo
+      - carks
+      - carny
+      - carob
       - carol
+      - carom
+      - carpi
+      - carps
       - carry
+      - carse
+      - carte
+      - carts
       - carve
+      - cased
+      - cases
+      - casks
       - caste
+      - casts
       - catch
       - cater
       - catty
+      - cauda
       - caulk
+      - cauls
       - cause
+      - caved
+      - caver
+      - caves
+      - cavie
       - cavil
+      - cawed
       - cease
+      - cecal
+      - cecum
       - cedar
+      - ceded
+      - ceder
+      - cedes
+      - cedis
+      - ceiba
+      - celeb
+      - cella
       - cello
+      - cells
+      - celom
+      - cense
+      - cento
+      - cents
+      - ceorl
+      - cered
+      - ceres
+      - ceria
+      - ceric
+      - ceros
+      - cesar
+      - cesta
+      - chads
       - chafe
       - chaff
       - chain
@@ -358,114 +967,315 @@ nlu:
       - champ
       - chant
       - chaos
+      - chape
+      - chaps
       - chard
+      - chare
+      - chary
       - charm
+      - charr
+      - chars
       - chart
       - chase
       - chasm
+      - chats
+      - chaws
       - cheap
       - cheat
       - check
       - cheek
+      - cheep
       - cheer
+      - chefs
+      - chela
+      - chert
       - chess
       - chest
+      - chevy
+      - chewy
+      - chews
+      - chiao
       - chick
+      - chico
       - chide
       - chief
       - child
+      - chyle
       - chili
       - chill
+      - chimb
       - chime
+      - chyme
+      - chimp
       - china
+      - chine
+      - ching
+      - chink
+      - chino
+      - chins
+      - chips
+      - chirk
+      - chirm
       - chirp
+      - chirr
+      - chits
+      - chive
+      - chivy
       - chock
       - choir
       - choke
+      - choli
+      - chomp
+      - chook
+      - chops
       - chord
       - chore
       - chose
+      - chows
+      - chron
+      - chron
+      - chubs
       - chuck
+      - chufa
+      - chuff
+      - chugs
       - chump
+      - chums
       - chunk
+      - churl
       - churn
+      - churr
       - chute
+      - cycad
+      - cycle
       - cider
       - cigar
+      - cilia
+      - cylix
+      - cymar
+      - cymas
+      - cymes
+      - cimex
       - cinch
+      - cynic
       - circa
+      - cirri
+      - cisco
+      - cysts
+      - cited
+      - cites
+      - cyton
+      - civet
       - civic
       - civil
       - clack
       - claim
+      - clays
       - clamp
+      - clams
       - clang
       - clank
+      - clans
+      - claps
+      - clary
+      - claro
       - clash
       - clasp
       - class
+      - class
+      - clave
+      - clavi
+      - claws
       - clean
       - clear
       - cleat
+      - cleek
+      - clefs
       - cleft
+      - clepe
       - clerk
+      - clews
       - click
       - cliff
       - climb
+      - clime
+      - cline
       - cling
       - clink
+      - clips
       - cloak
       - clock
+      - clods
+      - clogs
+      - cloys
+      - clomb
+      - clomp
       - clone
+      - clonk
+      - clops
       - close
       - cloth
+      - clots
       - cloud
       - clout
       - clove
       - clown
+      - clubs
       - cluck
       - clued
+      - clues
       - clump
       - clung
+      - clunk
       - coach
+      - coact
+      - coaly
+      - coals
       - coast
+      - coati
+      - coats
+      - cobia
+      - coble
       - cobra
+      - cocci
+      - cocky
+      - cocks
       - cocoa
+      - cocos
+      - codas
+      - coded
+      - coder
+      - codes
+      - codex
+      - codon
+      - coeds
+      - cogon
+      - cohos
+      - coyer
+      - coifs
+      - coign
+      - coyly
+      - coils
+      - coins
+      - coypu
+      - coirs
+      - coked
+      - cokes
+      - colas
+      - colds
+      - coley
+      - coles
+      - colic
+      - colly
       - colon
       - color
+      - colts
+      - colza
+      - comas
+      - combe
+      - combo
+      - combs
+      - comdg
+      - comdg
+      - comer
+      - comes
       - comet
       - comfy
       - comic
       - comma
+      - compo
+      - comps
       - conch
       - condo
+      - coned
+      - coney
+      - cones
+      - conga
       - conic
+      - conks
+      - conns
+      - contd
+      - contd
+      - conte
+      - conto
+      - contr
+      - contr
+      - cooed
+      - cooee
+      - cooky
+      - cooks
+      - cools
+      - coomb
+      - coons
+      - coops
+      - coots
+      - copal
+      - coped
+      - coper
+      - copes
+      - copra
       - copse
       - coral
+      - cords
+      - cored
       - corer
+      - cores
+      - corgi
+      - coria
+      - corky
+      - corks
+      - corms
       - corny
+      - corns
+      - cornu
+      - corps
+      - corse
+      - cosec
+      - coset
+      - costa
+      - costs
+      - cotes
+      - cotta
       - couch
       - cough
       - could
       - count
       - coupe
+      - coups
       - court
+      - couth
+      - covey
       - coven
       - cover
+      - coves
       - covet
-      - covey
+      - covin
+      - cowed
       - cower
-      - coyly
+      - cowls
+      - coxae
+      - coxed
+      - coxes
+      - cozen
+      - craal
+      - crabs
       - crack
       - craft
+      - crags
+      - crake
       - cramp
+      - crams
       - crane
       - crank
+      - crape
+      - crapy
+      - craps
       - crash
       - crass
       - crate
       - crave
       - crawl
+      - craws
       - craze
       - crazy
       - creak
@@ -473,430 +1283,1164 @@ nlu:
       - credo
       - creed
       - creek
+      - creel
       - creep
       - creme
       - crepe
       - crept
       - cress
       - crest
+      - crews
+      - cribs
       - crick
       - cried
       - crier
+      - cries
       - crime
       - crimp
+      - crine
+      - crypt
       - crisp
+      - cryst
+      - cryst
       - croak
       - crock
+      - croft
       - crone
       - crony
+      - cronk
       - crook
+      - croon
+      - crops
+      - crore
       - cross
       - croup
       - crowd
       - crown
+      - crows
+      - croze
+      - cruck
       - crude
       - cruel
+      - cruet
       - crumb
       - crump
+      - cruse
       - crush
       - crust
-      - crypt
+      - crwth
+      - cubby
+      - cubeb
+      - cubed
+      - cuber
+      - cubes
       - cubic
+      - cubit
+      - cuddy
+      - cuffs
+      - cuing
+      - cukes
+      - culch
+      - culet
+      - culex
+      - cully
+      - culls
+      - culms
+      - culpa
+      - cults
       - cumin
+      - cunts
+      - cupel
+      - cupid
+      - cuppa
+      - curbs
+      - curch
+      - curdy
+      - curds
+      - cured
+      - curer
+      - cures
+      - curet
+      - curia
+      - curie
       - curio
       - curly
+      - curls
       - curry
       - curse
       - curve
       - curvy
+      - cusec
+      - cushy
+      - cusks
+      - cusps
+      - cutch
+      - cutey
+      - cuter
       - cutie
-      - cyber
-      - cycle
-      - cynic
+      - cutin
+      - cutis
+      - cutty
+      - cutup
+      - czars
+      - daces
+      - dacha
+      - dadas
       - daddy
+      - dados
+      - daffy
+      - dagos
+      - dahls
       - daily
       - dairy
       - daisy
+      - dales
       - dally
+      - daman
+      - damar
+      - dames
+      - damns
+      - damps
       - dance
       - dandy
+      - dangs
+      - danio
+      - dared
+      - darer
+      - dares
+      - daric
+      - darky
+      - darns
+      - darts
+      - dated
+      - dater
+      - dates
       - datum
+      - daube
+      - daubs
       - daunt
+      - davit
+      - dawns
+      - dazed
+      - dazes
+      - deals
       - dealt
+      - deans
+      - deary
+      - dears
       - death
+      - debag
       - debar
       - debit
+      - debts
       - debug
+      - debus
       - debut
-      - decal
+      - decaf
       - decay
-      - decor
+      - decal
+      - decks
       - decoy
+      - decor
       - decry
+      - dedal
+      - deeds
+      - deems
+      - deeps
       - defer
+      - defog
+      - degas
+      - deice
+      - deify
       - deign
+      - deism
+      - deist
       - deity
+      - dekko
       - delay
+      - delft
+      - delis
+      - dells
       - delta
       - delve
+      - demit
+      - demob
       - demon
+      - demos
       - demur
+      - denar
       - denim
+      - denom
+      - denom
       - dense
+      - dents
       - depot
       - depth
       - derby
+      - deriv
+      - deriv
+      - derma
+      - derry
+      - desex
+      - desks
       - deter
       - detox
       - deuce
       - devil
+      - dewan
+      - dhobi
+      - dhole
+      - dhoti
+      - dhows
+      - dyads
+      - dials
       - diary
+      - diazo
+      - diced
       - dicey
+      - dicer
+      - dices
+      - dicky
+      - dicks
+      - dicot
+      - dicta
+      - didos
+      - didst
+      - dyers
+      - diets
+      - dight
       - digit
+      - dying
+      - diked
+      - dikes
+      - dykes
+      - dildo
       - dilly
+      - dills
+      - dimer
+      - dimes
       - dimly
+      - dinar
+      - dined
       - diner
-      - dingo
+      - dines
+      - dynes
+      - dinge
       - dingy
+      - dingo
+      - dings
+      - dinky
+      - dints
       - diode
+      - dippy
+      - dipso
+      - direr
       - dirge
+      - dirks
       - dirty
       - disco
+      - discs
+      - dishy
+      - disks
+      - distr
+      - distr
       - ditch
-      - ditto
+      - ditsy
       - ditty
+      - ditto
+      - ditzy
+      - divan
+      - divas
+      - dived
       - diver
+      - dives
+      - divot
+      - divvy
+      - diwan
+      - dixie
+      - dizen
       - dizzy
+      - dobby
+      - dobla
+      - dobra
+      - dobro
+      - docks
       - dodge
       - dodgy
+      - dodos
+      - doers
+      - doffs
+      - doges
+      - doggy
+      - doggo
+      - dogie
       - dogma
-      - doing
+      - doyen
+      - doily
+      - dolce
+      - doled
+      - doles
       - dolly
+      - dolls
+      - dolor
+      - dolts
+      - domed
+      - domes
+      - donas
+      - donee
+      - donga
+      - dongs
+      - donna
+      - donne
       - donor
-      - donut
+      - dooms
+      - doors
+      - doozy
+      - doped
       - dopey
+      - doper
+      - dopes
+      - dorky
+      - dorks
+      - dorms
+      - dorty
+      - dosed
+      - doses
+      - doted
+      - doter
+      - dotes
+      - dotty
       - doubt
+      - douce
       - dough
+      - douma
+      - douse
+      - doves
       - dowdy
       - dowel
+      - dower
+      - dowie
       - downy
+      - downs
       - dowry
+      - dowse
+      - dozed
       - dozen
+      - dozer
+      - dozes
+      - drabs
+      - draff
       - draft
+      - drags
       - drain
+      - drays
       - drake
       - drama
+      - drams
       - drank
       - drape
       - drawl
       - drawn
+      - draws
       - dread
       - dream
+      - drear
+      - dregs
       - dress
+      - dryad
       - dried
       - drier
+      - dryer
+      - dries
       - drift
+      - drily
+      - dryly
       - drill
       - drink
+      - drips
       - drive
       - droit
       - droll
       - drone
       - drool
       - droop
+      - drops
       - dross
       - drove
       - drown
+      - drubs
+      - drugs
       - druid
+      - drums
       - drunk
-      - dryer
-      - dryly
+      - drupe
+      - druse
+      - duads
+      - duals
+      - ducal
+      - ducat
       - duchy
+      - ducky
+      - ducks
+      - ducts
+      - duded
+      - dudes
+      - duels
+      - duets
+      - duffs
+      - dukes
+      - dulia
       - dully
+      - dulls
+      - dulse
       - dummy
       - dumpy
+      - dumps
       - dunce
+      - dunes
+      - dungs
+      - dunks
+      - dunno
+      - duomo
+      - duped
+      - duper
+      - dupes
+      - duple
+      - duppy
+      - durra
+      - durst
+      - durum
       - dusky
       - dusty
+      - dusts
       - dutch
       - duvet
       - dwarf
       - dwell
       - dwelt
-      - dying
       - eager
       - eagle
+      - eagre
+      - eared
       - early
+      - earls
+      - earns
       - earth
+      - eased
       - easel
+      - eases
       - eaten
       - eater
+      - eaves
+      - ebbed
       - ebony
+      - echos
       - eclat
+      - edema
+      - edged
+      - edger
+      - edges
       - edict
       - edify
+      - edits
+      - educe
+      - educt
       - eerie
+      - egads
+      - egest
+      - egged
+      - egger
       - egret
+      - eider
+      - eidos
       - eight
+      - eying
+      - eikon
+      - eyras
+      - eyrir
       - eject
       - eking
+      - eland
       - elate
       - elbow
       - elder
       - elect
+      - elect
       - elegy
+      - elemi
       - elfin
       - elide
       - elite
       - elope
       - elude
+      - elute
+      - elver
+      - elves
       - email
+      - embay
       - embed
       - ember
+      - embow
+      - embus
       - emcee
+      - emend
+      - emery
+      - emirs
+      - emits
+      - emmer
+      - emmet
+      - emote
       - empty
       - enact
+      - enate
+      - ended
       - endow
+      - endue
       - enema
       - enemy
+      - engin
+      - engin
       - enjoy
       - ennui
       - ensue
       - enter
       - entry
+      - enure
+      - envoi
       - envoy
+      - eosin
+      - epact
+      - epees
+      - ephah
+      - ephod
+      - ephor
+      - epics
       - epoch
+      - epode
       - epoxy
       - equal
       - equip
+      - equiv
+      - equiv
       - erase
       - erect
+      - ergot
+      - ernes
       - erode
+      - erose
+      - erred
       - error
+      - eruct
+      - erugo
       - erupt
+      - esker
       - essay
       - ester
+      - estop
       - ether
       - ethic
+      - ethyl
       - ethos
+      - etnas
       - etude
+      - etuis
+      - euros
       - evade
+      - evens
       - event
       - every
+      - evert
       - evict
+      - evils
+      - evite
       - evoke
+      - ewers
       - exact
       - exalt
+      - exams
       - excel
+      - exeat
+      - execs
       - exert
       - exile
+      - exine
       - exist
+      - exits
+      - exons
       - expel
+      - expos
       - extol
       - extra
+      - exude
       - exult
-      - eying
+      - exurb
       - fable
+      - faced
+      - facer
+      - faces
       - facet
+      - facts
+      - faddy
+      - faded
+      - fader
+      - fades
+      - fadge
+      - faena
+      - fagot
+      - fails
       - faint
       - fairy
+      - fairs
       - faith
-      - false
+      - faked
+      - faker
+      - fakes
+      - fakir
+      - falls
+      - famed
       - fancy
+      - fango
+      - fangs
       - fanny
+      - fanon
+      - faqir
+      - farad
       - farce
+      - farci
+      - farcy
+      - fared
+      - farer
+      - fares
+      - farms
+      - farts
+      - fasts
       - fatal
+      - fated
+      - fates
+      - fatly
+      - fatso
       - fatty
+      - fatwa
+      - faugh
       - fault
       - fauna
+      - fauns
+      - fauve
       - favor
+      - favus
+      - fawns
+      - faxed
+      - faxes
+      - fazed
+      - fazes
+      - fears
       - feast
+      - feats
       - fecal
+      - feces
+      - fecit
+      - feeds
+      - feels
+      - feeze
       - feign
+      - feyly
+      - feint
+      - felid
       - fella
+      - felly
+      - fells
       - felon
+      - felts
       - femme
       - femur
       - fence
+      - fends
+      - fenny
+      - feoff
       - feral
+      - feria
+      - fermi
+      - ferny
+      - ferns
       - ferry
       - fetal
       - fetch
+      - feted
+      - fetes
       - fetid
+      - fetor
       - fetus
+      - feuar
+      - feuds
       - fever
       - fewer
+      - fiats
       - fiber
+      - fiche
+      - fichu
       - ficus
+      - fidge
+      - fiefs
       - field
       - fiend
       - fiery
+      - fifer
+      - fifes
       - fifth
       - fifty
       - fight
+      - filar
+      - filch
+      - filed
       - filer
+      - files
       - filet
       - filly
+      - fills
       - filmy
+      - films
       - filth
+      - filum
       - final
       - finch
+      - finds
+      - fined
       - finer
+      - fines
+      - finis
+      - finks
+      - finny
+      - fired
+      - firer
+      - fires
+      - firms
+      - firry
       - first
+      - firth
+      - fiscs
       - fishy
+      - fists
+      - fitch
+      - fitly
+      - fiver
+      - fives
+      - fixed
       - fixer
+      - fixes
       - fizzy
+      - fjeld
       - fjord
       - flack
+      - flags
       - flail
       - flair
+      - flays
       - flake
       - flaky
       - flame
       - flank
+      - flans
+      - flaps
       - flare
       - flash
       - flask
+      - flats
+      - flawy
+      - flaws
+      - fleam
+      - fleas
       - fleck
+      - fleer
+      - flees
       - fleet
       - flesh
+      - flews
+      - flyby
       - flick
+      - flied
       - flier
+      - flies
       - fling
       - flint
+      - flips
       - flirt
+      - flite
+      - flyte
+      - flits
       - float
       - flock
+      - flocs
+      - floes
+      - flogs
+      - flong
       - flood
       - floor
+      - flops
       - flora
+      - flory
       - floss
       - flour
       - flout
       - flown
+      - flows
+      - flubs
+      - flues
       - fluff
       - fluid
       - fluke
+      - fluky
       - flume
+      - flump
       - flung
       - flunk
+      - fluor
       - flush
       - flute
-      - flyer
+      - fluty
+      - foals
       - foamy
+      - foams
       - focal
       - focus
+      - foehn
       - foggy
+      - foyer
+      - foils
       - foist
+      - folds
+      - folia
+      - folic
+      - folie
       - folio
+      - folks
       - folly
+      - fonts
+      - foods
+      - fools
+      - footy
+      - foots
       - foray
+      - forby
       - force
+      - fordo
+      - fords
+      - fores
       - forge
       - forgo
+      - forks
+      - forme
+      - forms
       - forte
       - forth
       - forty
+      - forts
       - forum
+      - fossa
+      - fosse
+      - fouls
       - found
-      - foyer
+      - fount
+      - fours
+      - fovea
+      - fowls
+      - foxed
+      - foxes
+      - frack
+      - frags
       - frail
+      - frays
       - frame
+      - franc
       - frank
+      - fraps
+      - frats
       - fraud
       - freak
       - freed
       - freer
+      - frees
+      - fremd
+      - frena
       - fresh
+      - frets
       - friar
       - fried
+      - fryer
+      - fries
+      - frigs
       - frill
       - frisk
+      - frith
       - fritz
+      - frize
+      - frizz
       - frock
+      - frogs
       - frond
+      - frons
       - front
+      - frore
+      - frosh
       - frost
       - froth
       - frown
       - froze
       - fruit
+      - frump
+      - fubsy
+      - fucks
+      - fucus
       - fudge
+      - fuels
+      - fugal
+      - fuggy
       - fugue
       - fully
+      - fulls
+      - fumed
+      - fumes
+      - funds
       - fungi
+      - fungo
       - funky
+      - funks
       - funny
+      - furan
+      - furls
       - furor
       - furry
+      - furze
+      - furzy
+      - fused
+      - fusee
+      - fuses
+      - fusil
       - fussy
+      - fusty
+      - futon
       - fuzzy
+      - gabby
+      - gable
+      - gadid
       - gaffe
+      - gaffs
+      - gayer
       - gaily
+      - gains
+      - gaits
+      - galah
+      - galas
+      - galea
+      - gales
+      - galls
+      - galop
+      - gamba
+      - gamed
+      - gamey
       - gamer
+      - games
+      - gamic
+      - gamin
       - gamma
+      - gammy
+      - gamps
       - gamut
+      - ganef
+      - gangs
+      - ganja
+      - ganof
+      - gaped
+      - gapes
+      - gappy
+      - garbs
+      - garth
+      - gases
+      - gasps
       - gassy
+      - gated
+      - gater
+      - gates
+      - gator
       - gaudy
+      - gauds
       - gauge
       - gaunt
+      - gaurs
+      - gauss
       - gauze
+      - gauzy
       - gavel
       - gawky
-      - gayer
-      - gayly
+      - gawks
+      - gawps
+      - gazed
       - gazer
+      - gazes
+      - gears
       - gecko
       - geeky
+      - geeks
       - geese
+      - geest
+      - gelds
+      - gelid
+      - gemma
+      - gemmy
+      - gemot
+      - genes
+      - genet
+      - genic
       - genie
+      - genii
+      - genip
+      - genit
+      - genit
+      - genoa
       - genre
+      - genro
+      - gents
+      - genus
+      - geode
+      - geoid
+      - gerah
+      - germy
+      - germs
+      - gesso
+      - getup
+      - ghats
+      - ghazi
+      - ghees
+      - ghyll
       - ghost
       - ghoul
       - giant
+      - gibed
+      - giber
+      - gibes
       - giddy
-      - gipsy
+      - gifts
+      - gigot
+      - gigue
+      - gilds
+      - gills
+      - gilts
+      - gimel
+      - gimpy
+      - gimps
+      - ginny
+      - gipon
+      - gypsy
+      - gyral
+      - girds
+      - gyres
       - girly
+      - girls
+      - gyron
+      - giros
+      - gyros
       - girth
+      - girts
+      - gyrus
+      - gyved
       - given
       - giver
+      - gives
+      - gyves
+      - gizmo
+      - glace
       - glade
+      - glads
+      - glair
       - gland
+      - glans
       - glare
+      - glary
       - glass
       - glaze
       - gleam
       - glean
+      - glebe
+      - glede
+      - gleet
+      - glens
+      - glias
       - glide
       - glint
+      - glyph
+      - glitz
+      - gloam
       - gloat
       - globe
+      - globs
+      - gloms
       - gloom
       - glory
       - gloss
+      - gloss
       - glove
-      - glyph
+      - glows
+      - gloze
+      - glued
+      - gluey
+      - glues
+      - glume
+      - gluon
+      - gluts
+      - gnarl
       - gnash
+      - gnats
+      - gnaws
       - gnome
+      - goads
+      - goals
+      - goats
       - godly
+      - goers
+      - gofer
+      - goyim
       - going
+      - golds
       - golem
+      - golfs
       - golly
       - gonad
       - goner
+      - gongs
+      - gonif
+      - gonzo
       - goody
+      - goods
       - gooey
       - goofy
+      - goofs
+      - gooks
+      - goons
       - goose
+      - goosy
+      - gopak
+      - goral
+      - gored
+      - gores
       - gorge
+      - gorps
+      - gorse
+      - goths
       - gouge
       - gourd
+      - gouty
+      - gowan
+      - gowns
+      - grabs
       - grace
       - grade
+      - grads
       - graft
       - grail
       - grain
+      - grays
+      - grams
       - grand
+      - grans
       - grant
       - grape
       - graph
@@ -907,210 +2451,778 @@ nlu:
       - gravy
       - graze
       - great
+      - grebe
       - greed
       - green
       - greet
+      - gride
+      - grids
       - grief
+      - grift
       - grill
       - grime
       - grimy
       - grind
+      - grins
       - gripe
+      - grips
+      - grist
+      - grith
+      - grits
       - groan
+      - groat
       - groin
       - groom
       - grope
       - gross
+      - grosz
+      - grots
       - group
       - grout
       - grove
       - growl
       - grown
+      - grows
+      - grubs
       - gruel
+      - grues
       - gruff
+      - grume
+      - grump
       - grunt
+      - guaco
+      - guano
+      - guans
       - guard
+      - guars
       - guava
+      - gucks
       - guess
       - guest
       - guide
+      - guyed
       - guild
       - guile
       - guilt
+      - guyot
       - guise
+      - gulag
+      - gulas
       - gulch
+      - gules
+      - gulfs
       - gully
+      - gulls
+      - gulps
       - gumbo
+      - gumma
       - gummy
+      - gunge
+      - gunky
+      - gunny
       - guppy
-      - gusto
+      - gurge
+      - gurus
+      - gushy
+      - gussy
       - gusty
-      - gypsy
+      - gusto
+      - gusts
+      - gutsy
+      - gutta
+      - gutty
       - habit
+      - hacek
+      - hacks
+      - hades
+      - hadst
+      - hafiz
+      - hafts
+      - hayed
+      - haiku
+      - hails
       - hairy
+      - hairs
+      - hajes
+      - hajji
+      - hakes
+      - hakim
+      - halal
+      - haled
+      - haler
+      - hales
+      - halls
+      - halms
+      - halos
+      - halts
       - halve
+      - hamal
+      - hames
+      - hammy
+      - hamza
+      - hance
       - handy
+      - hands
+      - hangs
+      - hanky
+      - hanks
+      - haole
+      - haply
       - happy
       - hardy
+      - hards
+      - hared
       - harem
+      - hares
+      - harks
+      - harms
       - harpy
+      - harps
       - harry
       - harsh
+      - harts
+      - hasps
       - haste
       - hasty
       - hatch
+      - hated
       - hater
+      - hates
+      - haugh
+      - haulm
+      - hauls
       - haunt
-      - haute
       - haven
+      - haver
+      - haves
       - havoc
+      - hawed
+      - hawks
+      - hawse
+      - hazan
+      - hazed
       - hazel
+      - hazer
+      - hazes
+      - hdqrs
+      - hdqrs
       - heady
+      - heads
+      - heals
+      - heaps
       - heard
+      - hears
       - heart
       - heath
+      - heats
       - heave
       - heavy
+      - heder
       - hedge
+      - heeds
+      - heels
       - hefty
+      - hefts
+      - heirs
       - heist
       - helix
       - hello
+      - hells
+      - helms
+      - helot
+      - helps
+      - helve
+      - hemal
+      - hemic
+      - hemin
       - hence
+      - henge
+      - henna
+      - henry
+      - herby
+      - herbs
+      - herds
+      - heres
       - heron
+      - hertz
+      - heths
+      - hewed
+      - hewer
+      - hexad
+      - hexed
+      - hexer
+      - hexes
+      - hexyl
+      - hicks
+      - hided
+      - hider
+      - hides
+      - hydra
+      - hydro
+      - hyena
+      - highs
+      - hight
+      - hying
+      - hiked
+      - hiker
+      - hikes
       - hilly
+      - hills
+      - hilts
+      - hilum
+      - hymen
+      - hymns
+      - hinds
       - hinge
-      - hippo
+      - hinny
+      - hints
+      - hyoid
+      - hyped
+      - hyper
+      - hypes
+      - hypha
+      - hypos
       - hippy
+      - hippo
+      - hyrax
+      - hired
+      - hirer
+      - hires
+      - hyson
       - hitch
+      - hived
+      - hives
       - hoard
+      - hoary
+      - hoars
       - hobby
+      - hobos
+      - hocks
+      - hocus
+      - hoers
+      - hogan
+      - hoick
       - hoist
+      - hoked
+      - hokey
+      - hokes
+      - hokku
+      - hokum
+      - holds
+      - holed
+      - holey
+      - holes
       - holly
+      - homed
+      - homey
       - homer
+      - homes
+      - homos
+      - honed
       - honey
+      - honer
+      - hones
+      - honky
+      - honks
       - honor
+      - hooch
+      - hoods
+      - hooey
+      - hoofs
+      - hooky
+      - hooks
+      - hoops
+      - hoots
+      - hoped
+      - hopes
+      - horah
+      - horal
+      - horas
       - horde
+      - horme
       - horny
+      - horns
+      - horol
+      - horol
       - horse
+      - horsy
+      - horst
+      - hosed
+      - hoses
+      - hosta
+      - hosts
       - hotel
       - hotly
+      - hough
       - hound
+      - houri
+      - hours
       - house
       - hovel
       - hover
       - howdy
+      - howls
+      - hubby
+      - huffy
+      - huffs
+      - huger
+      - hulas
+      - hulky
+      - hulks
+      - hulls
       - human
+      - humic
       - humid
       - humor
       - humph
+      - humpy
+      - humps
       - humus
       - hunch
       - hunky
+      - hunks
+      - hunts
+      - hurds
+      - hurls
       - hurry
+      - hurst
+      - hurts
       - husky
+      - husks
       - hussy
       - hutch
-      - hydro
-      - hyena
-      - hymen
-      - hyper
+      - huzza
+      - yacht
+      - yahoo
+      - yakka
+      - iambi
+      - iambs
+      - yamen
+      - yanks
+      - yapok
+      - yapon
+      - yappy
+      - yards
+      - yarns
+      - yawed
+      - yawls
+      - yawns
+      - yawps
+      - ichor
+      - icier
       - icily
       - icing
+      - icons
+      - ictus
       - ideal
+      - ideas
+      - idyll
       - idiom
       - idiot
+      - idled
       - idler
-      - idyll
+      - idles
+      - idols
+      - yeans
+      - yearn
+      - years
+      - yeast
+      - yeggs
+      - yells
+      - yelps
+      - yenta
+      - yeses
+      - yetis
       - igloo
+      - ihram
+      - yield
+      - yikes
+      - ileac
+      - ileal
+      - ileum
+      - ileus
       - iliac
+      - ilium
+      - illus
       - image
+      - imago
+      - imams
       - imbue
+      - imide
+      - imine
+      - immix
       - impel
+      - imper
+      - imper
       - imply
       - inane
-      - inbox
+      - inapt
       - incur
+      - incus
+      - indef
+      - indef
       - index
+      - indic
+      - indic
+      - indie
+      - induc
+      - induc
+      - indue
       - inept
       - inert
       - infer
+      - infin
+      - infin
+      - infix
+      - infra
+      - ingle
       - ingot
+      - inion
+      - inked
+      - inkle
       - inlay
       - inlet
       - inner
+      - inorg
+      - inorg
       - input
+      - inset
+      - instr
+      - instr
       - inter
+      - inter
+      - intis
       - intro
+      - intro
+      - inure
+      - inurn
+      - yobbo
+      - yodel
+      - iodic
+      - yodle
+      - yogic
+      - yogis
+      - yoked
+      - yokel
+      - yokes
+      - yolks
       - ionic
+      - iotas
+      - young
+      - youth
+      - yowls
+      - irade
       - irate
+      - irked
       - irony
+      - irons
+      - irreg
+      - irreg
+      - isles
       - islet
+      - issei
       - issue
+      - istle
       - itchy
+      - items
+      - yucca
+      - yucky
+      - yucks
+      - yulan
+      - yummy
+      - yurts
+      - ivied
+      - ivies
       - ivory
+      - ixtle
+      - izard
+      - jabot
+      - jacal
+      - jacks
+      - jaded
+      - jades
+      - jaggy
+      - jails
+      - jakes
+      - jalap
+      - jambs
+      - jammy
+      - japan
+      - japed
+      - japer
+      - japes
+      - jatos
       - jaunt
+      - jawed
       - jazzy
+      - jeans
+      - jebel
+      - jeeps
+      - jeers
       - jelly
+      - jello
+      - jells
+      - jemmy
+      - jenny
+      - jerid
       - jerky
+      - jerks
+      - jerry
+      - jests
       - jetty
       - jewel
+      - jibed
+      - jibes
       - jiffy
+      - jiffs
+      - jihad
+      - jilts
+      - jimmy
+      - jingo
+      - jinks
+      - jinni
+      - jinns
+      - jived
+      - jiver
+      - jives
+      - jocko
+      - jocks
+      - joeys
+      - johns
+      - joyed
+      - joins
       - joint
       - joist
+      - joked
+      - jokey
       - joker
+      - jokes
       - jolly
+      - jolty
+      - jolts
+      - jorum
+      - joule
       - joust
+      - jowly
+      - jowls
       - judge
+      - jugal
+      - jugum
       - juice
       - juicy
+      - jujus
+      - julep
       - jumbo
       - jumpy
+      - jumps
+      - junco
+      - junky
+      - junks
       - junta
-      - junto
+      - jupon
+      - jural
+      - jurat
+      - jurel
       - juror
-      - kappa
-      - karma
+      - jutty
+      - kabob
+      - kafir
+      - kaiak
       - kayak
+      - kails
+      - kayos
+      - kakis
+      - kalif
+      - kalis
+      - kalpa
+      - kanji
+      - kanzu
+      - kaons
+      - kaphs
+      - kapok
+      - kappa
+      - kaput
+      - karat
+      - karma
+      - karst
+      - karts
+      - kasha
+      - kauri
+      - kavas
+      - kazoo
       - kebab
+      - kebob
+      - kedge
+      - keels
+      - keens
+      - keeps
+      - keyed
+      - kelly
+      - kenaf
+      - kendo
+      - kente
+      - kepis
+      - kerne
+      - ketch
+      - kevel
       - khaki
+      - khans
+      - kheda
+      - khoum
+      - kiang
+      - kyats
+      - kibes
+      - kicky
+      - kicks
+      - kiddo
+      - kikes
+      - kylix
+      - kills
+      - kilns
+      - kilos
+      - kilts
+      - kinas
+      - kinds
+      - kines
+      - kings
+      - kinin
       - kinky
+      - kinks
+      - kinos
       - kiosk
+      - kited
+      - kites
       - kitty
+      - kiwis
+      - klong
+      - kloof
+      - kluge
+      - klutz
       - knack
+      - knaps
       - knave
       - knead
       - kneed
       - kneel
+      - knees
+      - knell
       - knelt
       - knife
+      - knish
+      - knits
+      - knobs
       - knock
       - knoll
+      - knots
+      - knout
       - known
+      - knows
+      - knurl
       - koala
+      - koans
+      - kohls
+      - koine
+      - kolas
+      - kooky
+      - kooks
+      - kopek
+      - kopje
+      - korma
+      - kotos
+      - kraal
+      - kraft
+      - krait
+      - kraut
       - krill
+      - krona
+      - krone
+      - kroon
+      - kudos
+      - kudus
+      - kudzu
+      - kukri
+      - kulak
+      - kurus
+      - kvass
       - label
+      - labia
       - labor
+      - laced
+      - lacer
+      - laces
+      - lacks
+      - laded
       - laden
+      - lades
       - ladle
+      - lagan
       - lager
+      - layer
+      - laird
+      - lairs
+      - laity
+      - layup
+      - laker
+      - lakes
+      - lakhs
+      - lamas
+      - lambs
+      - lamed
+      - lamer
+      - lames
+      - lamia
+      - lamps
+      - lanai
       - lance
+      - lands
+      - lanes
       - lanky
       - lapel
+      - lapin
       - lapse
+      - larch
+      - lardy
+      - lards
+      - lares
       - large
+      - largo
+      - larks
+      - larum
       - larva
+      - lased
+      - laser
+      - lases
       - lasso
+      - lasts
       - latch
+      - lated
       - later
+      - latex
       - lathe
-      - latte
+      - lathi
+      - lathy
+      - laths
+      - latke
+      - lauds
       - laugh
-      - layer
+      - lavas
+      - laved
+      - laver
+      - laves
+      - lawns
+      - laxer
+      - laxly
+      - lazar
+      - lazed
+      - lazes
       - leach
+      - leads
       - leafy
+      - leafs
       - leaky
-      - leant
+      - leaks
+      - leans
+      - leaps
       - leapt
       - learn
       - lease
@@ -1119,593 +3231,1811 @@ nlu:
       - leave
       - ledge
       - leech
+      - leeks
       - leery
+      - leers
       - lefty
+      - lefts
       - legal
+      - leges
       - leggy
+      - legit
+      - leman
+      - lemma
       - lemon
       - lemur
+      - lends
+      - lenis
+      - lento
+      - leone
       - leper
+      - lepta
+      - lethe
+      - letup
+      - levee
       - level
       - lever
+      - levin
+      - lewis
+      - lexis
+      - liana
+      - liard
+      - liars
       - libel
+      - liber
+      - libra
+      - licit
+      - licks
+      - lidos
       - liege
+      - liens
+      - lifer
+      - lifts
+      - ligan
+      - liger
       - light
+      - lying
+      - liked
       - liken
+      - liker
+      - likes
       - lilac
+      - lilts
       - limbo
+      - limbs
+      - limed
+      - limey
+      - limen
+      - limes
       - limit
+      - limns
+      - limos
+      - lymph
+      - limps
+      - lynch
+      - lindy
+      - lined
       - linen
       - liner
+      - lines
       - lingo
+      - lings
+      - linin
+      - links
+      - linty
+      - lints
+      - lions
       - lipid
+      - lippy
+      - lyres
+      - lyric
+      - lyses
+      - lysin
+      - lysis
+      - lisle
+      - lisps
+      - lyssa
+      - lists
+      - litas
+      - liter
       - lithe
+      - litho
+      - litho
+      - lytic
+      - lytta
+      - lived
+      - liven
       - liver
+      - lives
       - livid
+      - livre
       - llama
+      - llano
+      - loach
+      - loads
+      - loafs
       - loamy
+      - loams
+      - loans
       - loath
+      - lobar
       - lobby
+      - lobed
+      - lobes
       - local
+      - locks
+      - locos
+      - locum
       - locus
+      - loden
+      - lodes
       - lodge
+      - loess
       - lofty
+      - lofts
+      - logan
+      - loges
+      - loggy
+      - logia
       - logic
       - login
+      - logos
+      - loyal
+      - loins
+      - lolly
+      - lolls
+      - loner
+      - longe
+      - longs
+      - looby
+      - looks
+      - looms
+      - loony
+      - loons
       - loopy
+      - loops
       - loose
+      - loots
+      - loped
+      - loper
+      - lopes
+      - loppy
+      - loran
+      - lords
+      - loris
       - lorry
+      - losel
       - loser
+      - loses
+      - lotas
+      - lotic
+      - lotto
+      - lotus
+      - lough
+      - louis
+      - loupe
+      - lours
       - louse
       - lousy
+      - louts
+      - loved
+      - lovey
       - lover
+      - loves
+      - lowed
       - lower
       - lowly
-      - loyal
+      - luaus
+      - lubes
+      - lubra
       - lucid
       - lucky
+      - lucks
+      - lucre
+      - ludic
+      - luffa
+      - luffs
+      - luged
+      - luges
+      - lulls
+      - lulus
       - lumen
       - lumpy
+      - lumps
       - lunar
       - lunch
       - lunge
+      - lungi
+      - lungs
       - lupus
       - lurch
+      - lured
+      - lures
+      - lurex
       - lurid
+      - lurks
+      - lushy
       - lusty
-      - lying
-      - lymph
-      - lyric
+      - lusts
+      - lutes
+      - luxes
+      - lweis
       - macaw
+      - maced
+      - maced
+      - maces
       - macho
+      - macks
+      - macle
       - macro
       - madam
       - madly
       - mafia
+      - mages
       - magic
       - magma
+      - magus
+      - maybe
+      - maids
+      - mails
+      - maims
+      - mains
+      - mayor
+      - mayst
       - maize
       - major
       - maker
+      - makes
+      - makos
+      - malar
+      - males
+      - malls
+      - malty
+      - malts
+      - mamas
+      - mamba
       - mambo
+      - mamey
       - mamma
       - mammy
+      - manas
+      - manat
+      - maned
+      - manes
       - manga
       - mange
-      - mango
       - mangy
+      - mango
       - mania
       - manic
+      - manky
       - manly
+      - manna
       - manor
+      - manse
+      - manta
+      - manuf
+      - manuf
       - maple
+      - maras
       - march
+      - march
+      - marcs
+      - mares
+      - marge
+      - maria
+      - marka
+      - marks
+      - marly
+      - marls
       - marry
       - marsh
+      - marts
+      - maser
+      - masks
       - mason
-      - masse
+      - massy
+      - masts
       - match
+      - mated
       - matey
+      - mater
+      - mates
+      - matin
+      - matte
+      - matzo
+      - mauls
+      - maund
       - mauve
+      - maven
+      - mavis
       - maxim
-      - maybe
-      - mayor
+      - maxis
+      - mazer
+      - mazes
       - mealy
+      - meals
+      - meany
+      - means
       - meant
       - meaty
+      - meats
       - mecca
       - medal
       - media
       - medic
+      - meets
+      - meiny
+      - melds
       - melee
+      - melic
       - melon
+      - melts
+      - memos
+      - mends
+      - menus
+      - meows
       - mercy
+      - meres
       - merge
       - merit
+      - merle
       - merry
+      - mesas
+      - mesic
+      - mesne
+      - meson
+      - messy
       - metal
+      - metal
+      - meted
       - meter
+      - metes
+      - meths
+      - metic
+      - metis
       - metro
+      - mewed
+      - mewls
+      - mezzo
+      - myall
+      - micks
+      - mycol
+      - mycol
       - micro
+      - middy
       - midge
+      - midis
       - midst
+      - miens
+      - miffy
+      - miffs
       - might
+      - miked
+      - mikes
+      - milch
+      - miler
+      - miles
+      - milia
+      - milit
+      - milit
       - milky
+      - milks
+      - mills
+      - milos
+      - milts
+      - mimed
+      - mimer
+      - mimes
       - mimic
+      - mynah
+      - mynas
       - mince
+      - minds
+      - mined
       - miner
+      - mines
+      - mingy
       - minim
+      - minis
+      - minke
+      - minks
       - minor
       - minty
+      - mints
       - minus
+      - mired
+      - mires
+      - myrrh
       - mirth
+      - mirza
+      - misdo
       - miser
       - missy
+      - misty
+      - mists
+      - miter
+      - mites
+      - myths
+      - mitis
+      - mitts
+      - mixed
+      - mixer
+      - mixes
+      - mneme
+      - moans
+      - moats
       - mocha
+      - mocks
       - modal
       - model
       - modem
+      - modes
+      - moggy
       - mogul
+      - mohur
+      - moils
+      - moire
       - moist
+      - mokes
+      - molal
       - molar
+      - molas
       - moldy
+      - molds
+      - moles
+      - molly
+      - molls
+      - molts
+      - mommy
+      - monad
+      - monas
+      - monde
       - money
+      - mongo
+      - monks
+      - monte
       - month
+      - mooch
       - moody
+      - moods
+      - mooed
+      - moony
+      - moons
+      - moors
       - moose
+      - moots
+      - moped
+      - mopey
+      - moper
+      - mopes
+      - moray
       - moral
+      - morel
+      - mores
+      - morns
       - moron
       - morph
+      - morse
+      - mosey
       - mossy
       - motel
+      - motes
+      - motet
+      - mothy
+      - moths
       - motif
       - motor
+      - motte
       - motto
-      - moult
+      - moues
       - mound
       - mount
       - mourn
       - mouse
+      - mousy
       - mouth
+      - moved
       - mover
+      - moves
       - movie
+      - mowed
       - mower
+      - moxie
+      - mucin
       - mucky
+      - mucks
+      - mucor
+      - mucro
       - mucus
       - muddy
+      - mudra
+      - muffs
+      - mufti
+      - muggy
+      - mujik
       - mulch
+      - mulct
+      - muley
+      - mules
+      - mulla
+      - mulls
+      - multi
       - mummy
+      - mumps
       - munch
+      - mungs
+      - muons
       - mural
+      - murex
       - murky
+      - murks
+      - murre
+      - mused
+      - muser
+      - muses
       - mushy
       - music
       - musky
+      - mussy
+      - musth
       - musty
-      - myrrh
+      - musts
+      - muted
+      - muter
+      - mutes
+      - mutts
+      - muzak
+      - muzzy
+      - nabob
+      - nacho
+      - nacre
       - nadir
+      - naevi
+      - naiad
+      - naifs
+      - nails
+      - naira
       - naive
+      - naked
+      - naker
+      - named
+      - namer
+      - names
+      - nance
+      - nancy
       - nanny
+      - napes
+      - nappe
+      - nappy
+      - narcs
+      - nards
+      - nares
+      - naris
+      - narky
       - nasal
       - nasty
       - natal
+      - natch
+      - nates
+      - natty
       - naval
+      - navar
       - navel
+      - naves
+      - navig
+      - navig
+      - navvy
+      - nawab
+      - neaps
+      - nears
+      - neath
+      - necks
       - needy
+      - needs
+      - negro
+      - negus
       - neigh
+      - nelly
+      - neper
+      - neral
       - nerdy
+      - nerds
       - nerve
+      - nervy
+      - nests
+      - netty
+      - neume
       - never
+      - nevus
+      - newel
       - newer
       - newly
+      - newsy
+      - newts
+      - nexus
+      - ngwee
+      - nyala
       - nicer
       - niche
+      - nicks
+      - nidus
       - niece
+      - nifty
       - night
+      - nihil
+      - nylon
+      - nimbi
+      - nimby
+      - nymph
+      - nines
       - ninja
       - ninny
+      - ninon
       - ninth
+      - nipas
+      - nippy
+      - nisei
+      - nisus
+      - niter
+      - nitid
+      - nitro
+      - nitty
+      - nival
+      - nixed
+      - nixes
+      - nobby
       - noble
       - nobly
+      - nocks
+      - nodal
+      - noddy
+      - nodes
+      - nodus
+      - noels
+      - nohow
       - noise
       - noisy
       - nomad
+      - nomen
+      - nonce
+      - nones
+      - nonet
+      - nooky
+      - nooks
+      - noons
       - noose
+      - noria
+      - norms
       - north
-      - nosey
+      - nosed
+      - noses
       - notch
+      - noted
+      - notes
+      - notum
+      - nouns
+      - novae
+      - novas
       - novel
+      - noway
+      - nubby
+      - nuder
+      - nudes
       - nudge
+      - nuked
+      - nukes
+      - nulls
+      - numbs
+      - numen
+      - numis
+      - numis
       - nurse
       - nutty
-      - nylon
-      - nymph
       - oaken
+      - oakum
+      - oared
+      - oases
+      - oasis
+      - oasts
+      - oaten
+      - oaths
+      - obeah
+      - obeys
+      - obeli
       - obese
+      - obits
+      - objet
+      - oboes
+      - oboli
+      - occas
+      - occas
       - occur
       - ocean
+      - ocher
+      - ocker
+      - ocrea
+      - octad
       - octal
+      - octan
       - octet
+      - oculi
       - odder
       - oddly
+      - odeon
+      - odeum
+      - odium
+      - odors
       - offal
+      - offed
       - offer
       - often
+      - ogeed
+      - ogham
+      - ogive
+      - ogled
+      - ogler
+      - ogles
+      - ogres
+      - ohmic
+      - oiled
+      - oiler
+      - oinks
+      - okays
+      - okapi
+      - okras
       - olden
       - older
+      - oldie
+      - oleic
+      - olein
+      - oleum
       - olive
-      - ombre
+      - ollas
+      - ology
+      - omasa
+      - omber
       - omega
+      - omens
+      - omits
       - onion
       - onset
+      - ontic
+      - oohed
+      - oomph
+      - ootid
+      - oozed
+      - oozes
+      - opahs
+      - opals
+      - opens
       - opera
       - opine
+      - oping
       - opium
+      - opted
       - optic
+      - orals
+      - orang
+      - orate
       - orbit
+      - orcas
       - order
+      - oread
       - organ
+      - oriel
+      - orlop
+      - ornis
+      - orris
+      - osier
+      - osmic
       - other
+      - ottar
       - otter
       - ought
       - ounce
+      - ouphe
+      - ousel
+      - ousts
       - outdo
+      - outed
       - outer
       - outgo
+      - outre
+      - ouzel
+      - ouzos
+      - ovals
       - ovary
       - ovate
+      - ovens
+      - overs
       - overt
       - ovine
       - ovoid
+      - ovolo
+      - ovule
       - owing
+      - owlet
+      - owned
       - owner
+      - oxbow
       - oxide
+      - oxime
       - ozone
+      - paced
+      - pacer
+      - paces
+      - pacha
+      - packs
+      - pacts
       - paddy
+      - padre
+      - paean
+      - paeon
       - pagan
+      - paged
+      - pager
+      - pages
+      - payed
+      - payee
+      - payer
+      - pails
+      - pains
       - paint
+      - pairs
+      - paisa
+      - paled
       - paler
+      - pales
+      - pally
+      - palls
+      - palmy
+      - palms
       - palsy
+      - pampa
+      - panda
+      - paned
       - panel
+      - panes
+      - panga
+      - pangs
       - panic
+      - panne
       - pansy
+      - panty
+      - panto
+      - pants
       - papal
+      - papas
+      - papaw
       - paper
+      - pappy
+      - paras
+      - parch
+      - pared
       - parer
+      - pares
+      - pareu
       - parka
+      - parky
+      - parks
+      - parol
       - parry
+      - parrs
       - parse
       - party
+      - parts
+      - parve
+      - pasha
+      - pashm
+      - passe
       - pasta
       - paste
       - pasty
+      - pasts
       - patch
+      - paten
+      - pates
+      - paths
+      - patin
       - patio
+      - patly
       - patsy
       - patty
       - pause
-      - payee
-      - payer
+      - pavan
+      - paved
+      - paves
+      - pavid
+      - pavis
+      - pawed
+      - pawls
+      - pawns
+      - paxes
       - peace
       - peach
+      - peags
+      - peaky
+      - peaks
+      - peals
+      - peans
       - pearl
+      - pears
+      - peart
+      - peaty
       - pecan
+      - pecks
       - pedal
+      - peeks
+      - peels
+      - peens
+      - peeps
+      - peers
+      - peeve
+      - pekan
+      - pekes
+      - pekoe
+      - pelts
       - penal
       - pence
-      - penne
+      - pends
+      - penis
+      - penna
+      - penni
       - penny
+      - peony
+      - peons
+      - peppy
       - perch
+      - perdu
       - peril
+      - peris
       - perky
+      - perks
+      - perms
+      - perry
+      - perse
       - pesky
+      - pesos
       - pesto
+      - pests
       - petal
+      - peter
+      - petit
       - petty
+      - pewee
+      - pewit
+      - phage
       - phase
+      - pheon
+      - phial
+      - phyla
+      - phyle
+      - phlox
       - phone
       - phony
+      - phons
       - photo
+      - phots
+      - phren
+      - phren
       - piano
       - picky
+      - picks
+      - picot
+      - picul
       - piece
+      - piers
+      - pieta
       - piety
       - piggy
+      - pygmy
+      - piing
+      - pikas
+      - piked
+      - piker
+      - pikes
+      - pilaf
+      - pilch
+      - piled
+      - pilei
+      - piles
+      - pills
+      - pylon
       - pilot
+      - pimps
       - pinch
+      - pined
       - piney
+      - pines
+      - pings
       - pinky
+      - pinko
+      - pinks
+      - pinna
+      - pinny
+      - pinon
+      - pinta
       - pinto
+      - pints
+      - pinup
+      - pyoid
+      - pions
+      - pious
+      - piped
       - piper
+      - pipes
+      - pipit
       - pique
+      - pyres
+      - pirog
+      - piste
+      - pitas
       - pitch
       - pithy
+      - piths
+      - piton
+      - pitta
       - pivot
       - pixel
+      - pyxes
       - pixie
+      - pyxie
       - pizza
       - place
+      - plage
+      - playa
       - plaid
       - plain
+      - plays
       - plait
       - plane
       - plank
+      - plans
       - plant
+      - plash
+      - plasm
       - plate
+      - platy
+      - plats
       - plaza
       - plead
+      - pleas
       - pleat
+      - plebe
+      - plebs
+      - plena
+      - plica
       - plied
       - plier
+      - plies
+      - ploce
+      - plods
+      - ploys
+      - plonk
+      - plops
+      - plots
+      - plows
       - pluck
+      - plugs
       - plumb
       - plume
+      - plumy
       - plump
+      - plums
       - plunk
       - plush
+      - poach
+      - pocky
+      - pocks
+      - poddy
+      - poems
       - poesy
+      - poets
+      - pogey
+      - pogge
+      - poilu
       - point
       - poise
+      - poked
+      - pokey
       - poker
+      - pokes
       - polar
-      - polka
+      - poled
+      - poler
+      - poles
+      - polio
       - polyp
+      - polis
+      - polys
+      - polit
+      - polit
+      - polka
+      - polls
+      - pomes
+      - pommy
+      - ponce
+      - ponds
+      - pones
+      - pongs
       - pooch
+      - poods
+      - poofs
+      - poohs
+      - pooka
+      - pools
+      - poons
+      - poops
+      - popes
+      - poppa
       - poppy
       - porch
+      - pored
+      - porer
+      - pores
+      - porgy
+      - porky
+      - porno
+      - ports
+      - posed
       - poser
+      - poses
       - posit
       - posse
+      - posts
+      - potty
+      - potto
       - pouch
+      - poufs
+      - poult
       - pound
+      - pours
       - pouty
+      - pouts
       - power
+      - poxes
+      - prays
+      - prams
+      - prana
+      - prang
       - prank
+      - prase
+      - prate
+      - prats
       - prawn
       - preen
+      - preys
+      - preps
+      - presa
       - press
+      - prexy
       - price
       - prick
       - pride
       - pried
+      - prier
+      - pries
+      - prigs
       - prime
       - primo
+      - primp
+      - prink
       - print
+      - prion
       - prior
       - prism
       - privy
       - prize
       - probe
+      - prods
+      - proem
+      - profs
+      - prole
+      - promo
+      - proms
       - prone
       - prong
       - proof
+      - propr
+      - propr
+      - props
       - prose
+      - prosy
       - proud
       - prove
       - prowl
+      - prows
       - proxy
       - prude
       - prune
       - psalm
+      - pseud
+      - pseud
+      - pshaw
+      - psych
+      - psoas
+      - pubes
       - pubic
+      - pubis
+      - pucka
+      - pucks
       - pudgy
       - puffy
+      - puffs
+      - puked
+      - pukes
+      - pukka
+      - pulas
+      - puled
+      - puler
+      - pules
+      - pulls
       - pulpy
+      - pulps
       - pulse
+      - pumas
+      - pumps
       - punch
+      - pungy
+      - pungs
+      - punks
+      - punts
+      - pupae
+      - pupal
       - pupil
       - puppy
       - puree
       - purer
       - purge
+      - purls
+      - purrs
       - purse
+      - pursy
       - pushy
+      - pussy
       - putty
-      - pygmy
+      - putto
+      - putts
+      - qibla
+      - qophs
       - quack
+      - quads
+      - quaff
       - quail
+      - quays
       - quake
+      - quaky
+      - quale
       - qualm
+      - quant
       - quark
+      - quart
       - quart
       - quash
       - quasi
+      - quass
+      - quean
       - queen
       - queer
       - quell
       - query
+      - quern
       - quest
       - queue
       - quick
+      - quids
       - quiet
+      - quiff
       - quill
       - quilt
+      - quins
+      - quint
+      - quips
+      - quipu
+      - quire
       - quirk
+      - quirt
       - quite
+      - quits
+      - quoin
+      - quoit
       - quota
       - quote
       - quoth
       - rabbi
       - rabid
+      - raced
       - racer
+      - races
+      - racks
+      - racon
       - radar
       - radii
       - radio
+      - radix
+      - radon
+      - rafts
+      - ragas
+      - raged
+      - rages
+      - ragis
+      - raids
+      - rails
       - rainy
+      - rains
+      - rayon
       - raise
       - rajah
+      - rajas
+      - rajes
+      - raked
+      - raker
+      - rakes
+      - rales
       - rally
-      - ralph
-      - ramen
+      - ramie
+      - ramps
+      - rance
       - ranch
       - randy
+      - ranee
       - range
+      - rangy
+      - ranis
+      - ranks
+      - rants
+      - raped
+      - raper
+      - rapes
       - rapid
+      - rared
       - rarer
+      - rares
       - raspy
+      - rasps
+      - ratal
+      - ratan
+      - rated
+      - ratel
+      - rater
+      - rates
+      - rathe
       - ratio
       - ratty
+      - raved
+      - ravel
       - raven
-      - rayon
+      - raver
+      - raves
+      - ravin
+      - rawer
+      - razed
+      - razee
+      - razes
       - razor
       - reach
       - react
       - ready
+      - reads
       - realm
+      - reals
+      - reams
+      - reaps
       - rearm
-      - rebar
+      - rears
+      - reata
+      - reave
+      - rebec
       - rebel
+      - rebid
       - rebus
       - rebut
       - recap
+      - recce
+      - recon
+      - recti
+      - recto
       - recur
       - recut
+      - redan
+      - redid
+      - redye
+      - redly
+      - redux
       - reedy
+      - reeds
+      - reefs
+      - reeky
+      - reeks
+      - reels
+      - reest
+      - reeve
       - refer
       - refit
+      - refix
+      - refry
       - regal
       - rehab
+      - reify
       - reign
-      - relax
+      - reins
+      - reive
+      - rejig
       - relay
+      - relax
       - relic
+      - remap
+      - remex
       - remit
+      - remix
       - renal
+      - rends
       - renew
+      - renin
+      - rents
       - repay
       - repel
       - reply
+      - repps
+      - repro
+      - reran
       - rerun
+      - resat
       - reset
+      - resew
       - resin
+      - resit
+      - resow
+      - rests
       - retch
-      - retro
+      - retie
       - retry
+      - retro
       - reuse
       - revel
+      - revet
       - revue
-      - rhino
+      - rewed
+      - rheas
+      - rheum
       - rhyme
+      - rhino
+      - rhomb
+      - rhumb
+      - rials
+      - riant
+      - riata
+      - riced
+      - ricer
+      - rices
+      - ricks
       - rider
+      - rides
       - ridge
+      - ridgy
+      - riels
+      - rifer
+      - riffs
       - rifle
+      - rifts
       - right
       - rigid
       - rigor
+      - riyal
+      - riled
+      - riles
+      - rille
+      - rills
+      - rimed
+      - rimes
+      - rinds
+      - rings
+      - rinks
       - rinse
+      - riots
       - ripen
       - riper
       - risen
       - riser
+      - rises
+      - rishi
       - risky
+      - risks
+      - rites
+      - ritzy
       - rival
+      - rived
+      - riven
       - river
+      - rives
       - rivet
       - roach
+      - roads
+      - roams
+      - roans
+      - roars
       - roast
+      - robed
+      - robes
       - robin
+      - roble
       - robot
       - rocky
+      - rocks
       - rodeo
       - roger
       - rogue
+      - royal
+      - roily
+      - roils
+      - roles
+      - rolls
+      - roman
+      - romeo
+      - romps
+      - ronde
+      - rondo
+      - roods
+      - roofs
+      - rooky
+      - rooks
       - roomy
+      - rooms
+      - roose
       - roost
+      - roots
+      - roped
+      - roper
+      - ropes
+      - roque
+      - roses
+      - rosin
+      - rotas
+      - rotls
       - rotor
+      - roues
       - rouge
       - rough
       - round
       - rouse
+      - roust
       - route
+      - routs
+      - roved
       - rover
+      - roves
+      - rowan
       - rowdy
+      - rowed
+      - rowel
       - rower
-      - royal
+      - rubel
+      - rubes
+      - ruble
+      - ruche
+      - rucks
       - ruddy
+      - rudds
       - ruder
+      - ruffs
       - rugby
+      - ruing
+      - ruins
+      - ruled
       - ruler
+      - rules
+      - rumal
       - rumba
+      - rumen
+      - rummy
       - rumor
+      - rumps
+      - runes
+      - rungs
+      - runic
+      - runny
+      - runty
+      - runts
       - rupee
       - rural
+      - ruses
+      - rushy
+      - rusks
       - rusty
+      - rusts
+      - ruths
+      - rutty
+      - saber
+      - sabin
+      - sable
+      - sabot
+      - sabra
+      - sabre
+      - sacks
+      - sacra
+      - sades
+      - sadhu
       - sadly
       - safer
+      - safes
+      - sagas
+      - sager
+      - sages
+      - saggy
+      - sahib
+      - sayer
+      - saiga
+      - sails
       - saint
+      - saith
+      - saker
+      - sakes
+      - sakis
       - salad
+      - salep
+      - sales
       - sally
+      - salmi
+      - salol
       - salon
+      - salpa
       - salsa
       - salty
+      - salts
       - salve
       - salvo
+      - samba
+      - sambo
       - sandy
+      - sands
       - saner
+      - sapid
+      - sapor
       - sappy
+      - saran
+      - sards
+      - sarge
+      - saris
+      - sarky
+      - saros
+      - sasin
       - sassy
+      - satay
+      - sated
+      - satem
+      - sates
       - satin
       - satyr
       - sauce
       - saucy
       - sauna
+      - saury
       - saute
-      - savor
+      - saved
+      - saver
+      - saves
       - savoy
+      - savor
       - savvy
+      - sawed
+      - sawer
+      - saxes
+      - scabs
+      - scads
+      - scags
       - scald
       - scale
-      - scalp
       - scaly
+      - scalp
       - scamp
+      - scams
+      - scans
       - scant
+      - scape
       - scare
       - scarf
       - scary
+      - scarp
+      - scars
+      - scats
+      - scend
       - scene
       - scent
+      - schmo
+      - schwa
       - scion
       - scoff
       - scold
       - scone
       - scoop
+      - scoot
       - scope
       - score
       - scorn
       - scour
       - scout
       - scowl
+      - scows
+      - scrag
       - scram
       - scrap
       - scree
       - screw
+      - scrim
+      - scrip
+      - scrod
+      - scrog
       - scrub
       - scrum
       - scuba
+      - scudo
+      - scuds
+      - scuff
+      - scull
+      - sculp
+      - sculp
+      - scums
+      - scups
+      - scurf
+      - scuta
+      - scute
+      - scuts
+      - seals
+      - seamy
+      - seams
+      - sears
+      - seats
+      - sebum
+      - secco
+      - sects
       - sedan
+      - sedge
+      - sedgy
+      - sedum
       - seedy
+      - seeds
+      - seeks
+      - seels
+      - seems
+      - seeps
+      - seers
+      - segno
       - segue
+      - seine
+      - seise
+      - seism
       - seize
+      - selah
+      - sells
       - semen
+      - semis
+      - sends
+      - senna
+      - senor
       - sense
+      - sepal
       - sepia
+      - sepoy
+      - septa
+      - septs
+      - serai
+      - serer
+      - serfs
+      - serge
       - serif
+      - serin
+      - serow
       - serum
       - serve
+      - servo
+      - setae
+      - setts
       - setup
       - seven
       - sever
+      - sewan
+      - sewed
       - sewer
+      - sexed
+      - sexes
+      - sexts
       - shack
       - shade
       - shady
+      - shads
       - shaft
+      - shags
+      - shahs
+      - shays
       - shake
       - shaky
+      - shako
       - shale
       - shall
       - shalt
       - shame
+      - shams
       - shank
       - shape
       - shard
@@ -1714,7 +5044,10 @@ nlu:
       - sharp
       - shave
       - shawl
+      - shawm
+      - sheaf
       - shear
+      - sheds
       - sheen
       - sheep
       - sheer
@@ -1722,156 +5055,369 @@ nlu:
       - sheik
       - shelf
       - shell
+      - shend
+      - sherd
+      - shewn
+      - shews
       - shied
+      - shier
+      - shyer
+      - shies
       - shift
+      - shyly
+      - shill
+      - shims
       - shine
       - shiny
+      - shins
+      - ships
       - shire
       - shirk
+      - shirr
       - shirt
+      - shits
+      - shiva
+      - shive
+      - shivs
       - shoal
+      - shoat
       - shock
+      - shoes
       - shone
       - shook
+      - shool
+      - shoos
       - shoot
+      - shops
       - shore
-      - shorn
       - short
+      - shote
+      - shots
       - shout
       - shove
-      - shown
       - showy
+      - shown
+      - shows
+      - shred
       - shrew
       - shrub
       - shrug
       - shuck
+      - shuns
       - shunt
       - shush
-      - shyly
+      - shuts
+      - sibyl
+      - sycee
+      - sicko
+      - sicks
+      - sided
+      - sides
+      - sidle
       - siege
       - sieve
+      - sifts
+      - sighs
       - sight
+      - sigil
       - sigma
+      - signs
+      - silds
       - silky
+      - silks
       - silly
+      - sills
+      - silos
+      - sylph
+      - silty
+      - silts
+      - silva
+      - simar
+      - simba
       - since
+      - syncs
+      - sines
       - sinew
       - singe
+      - sings
+      - sinks
+      - synod
+      - synop
+      - synop
+      - synth
+      - sinus
+      - sired
+      - siree
       - siren
+      - sires
+      - syrup
+      - sisal
+      - sises
       - sissy
+      - sitar
+      - sited
+      - sites
+      - situs
+      - sixes
       - sixth
       - sixty
+      - sizar
+      - sized
+      - sizer
+      - sizes
+      - skald
       - skate
+      - skean
+      - skeet
+      - skegs
+      - skein
+      - skelp
+      - skeps
+      - skews
+      - skids
+      - skied
       - skier
+      - skies
       - skiff
       - skill
       - skimp
+      - skims
+      - skink
+      - skins
+      - skint
+      - skips
+      - skirl
+      - skirr
       - skirt
+      - skite
+      - skits
+      - skive
+      - skoal
+      - skuas
       - skulk
       - skull
       - skunk
+      - slabs
       - slack
+      - slags
       - slain
+      - slays
+      - slake
+      - slams
       - slang
       - slant
+      - slaps
       - slash
       - slate
+      - slaty
+      - slats
+      - slave
+      - sleds
       - sleek
       - sleep
       - sleet
       - slept
+      - slews
       - slice
       - slick
       - slide
+      - slier
+      - slyer
+      - slyly
       - slime
       - slimy
+      - slims
       - sling
       - slink
+      - slype
+      - slips
+      - slits
+      - slobs
+      - sloes
+      - slogs
       - sloop
       - slope
+      - slops
       - slosh
       - sloth
+      - slots
+      - slows
+      - slubs
+      - slued
+      - slues
+      - sluff
+      - slugs
       - slump
+      - slums
       - slung
       - slunk
       - slurp
+      - slurs
       - slush
-      - slyly
+      - sluts
       - smack
       - small
+      - smalt
+      - smarm
       - smart
       - smash
+      - smaze
       - smear
       - smell
       - smelt
+      - smews
       - smile
       - smirk
       - smite
       - smith
       - smock
+      - smogs
       - smoke
       - smoky
+      - smoko
+      - smolt
       - smote
+      - smuts
       - snack
+      - snafu
+      - snags
       - snail
       - snake
       - snaky
+      - snaps
       - snare
+      - snark
       - snarl
+      - snath
       - sneak
+      - sneck
       - sneer
+      - snick
       - snide
       - sniff
       - snipe
+      - snips
+      - snits
+      - snobs
+      - snogs
+      - snood
+      - snook
       - snoop
+      - snoot
       - snore
       - snort
+      - snots
       - snout
       - snowy
-      - snuck
+      - snows
+      - snubs
       - snuff
+      - snugs
+      - soaks
       - soapy
+      - soaps
+      - soars
+      - soave
       - sober
+      - socks
+      - socle
+      - sodas
+      - sofar
+      - sofas
+      - softa
+      - softy
       - soggy
+      - soils
+      - solan
       - solar
+      - soldo
+      - soled
+      - soles
       - solid
+      - solon
+      - solos
+      - solus
       - solve
+      - somas
       - sonar
+      - sonde
+      - sones
+      - songs
       - sonic
+      - sonly
+      - sonny
       - sooth
       - sooty
+      - sopor
+      - soppy
+      - sorbs
+      - sorer
+      - sores
+      - sorgo
       - sorry
+      - sorts
+      - sorus
+      - sough
+      - souks
+      - souls
       - sound
+      - soupy
+      - soups
+      - sours
+      - souse
       - south
+      - sowed
       - sower
       - space
       - spade
+      - spahi
+      - spays
+      - spake
+      - spall
+      - spang
       - spank
+      - spans
       - spare
       - spark
+      - spars
       - spasm
+      - spate
+      - spats
       - spawn
       - speak
       - spear
       - speck
+      - specs
       - speed
       - spell
-      - spelt
       - spend
       - spent
+      - speos
       - sperm
+      - spews
+      - spica
       - spice
       - spicy
+      - spics
       - spied
       - spiel
+      - spier
+      - spies
+      - spiff
       - spike
       - spiky
+      - spile
       - spill
-      - spilt
       - spine
       - spiny
+      - spins
       - spire
+      - spiry
       - spite
+      - spits
+      - spitz
+      - spivs
+      - splay
       - splat
       - split
       - spoil
@@ -1880,36 +5426,64 @@ nlu:
       - spook
       - spool
       - spoon
+      - spoor
       - spore
       - sport
+      - spots
       - spout
+      - sprag
       - spray
+      - sprat
       - spree
       - sprig
+      - sprit
+      - sprue
+      - spuds
+      - spued
+      - spues
+      - spume
+      - spumy
       - spunk
       - spurn
+      - spurs
       - spurt
+      - sputa
+      - squab
       - squad
       - squat
+      - squaw
       - squib
+      - squid
+      - sruti
+      - stabs
+      - stacc
+      - stacc
       - stack
       - staff
       - stage
+      - stagy
+      - stags
       - staid
       - stain
       - stair
+      - stays
       - stake
       - stale
       - stalk
       - stall
       - stamp
       - stand
+      - stane
+      - stang
       - stank
+      - staph
       - stare
       - stark
+      - stars
       - start
       - stash
       - state
+      - stats
       - stave
       - stead
       - steak
@@ -1920,174 +5494,447 @@ nlu:
       - steep
       - steer
       - stein
+      - stela
+      - stele
+      - stems
+      - steno
+      - stent
+      - steps
+      - stere
       - stern
+      - stets
+      - stews
+      - stich
       - stick
+      - sties
+      - styes
       - stiff
+      - stile
+      - style
+      - styli
       - still
       - stilt
       - sting
       - stink
       - stint
+      - stipe
+      - stirk
+      - stirs
+      - stoat
       - stock
+      - stogy
       - stoic
       - stoke
       - stole
+      - stoma
       - stomp
       - stone
       - stony
       - stood
+      - stook
       - stool
       - stoop
+      - stope
+      - stops
       - store
+      - story
       - stork
       - storm
-      - story
+      - stoss
+      - stoup
       - stout
       - stove
+      - stows
+      - stray
       - strap
       - straw
-      - stray
+      - strep
+      - strew
+      - stria
       - strip
+      - stroy
+      - strop
+      - strow
+      - strum
       - strut
+      - stubs
       - stuck
       - study
+      - studs
       - stuff
+      - stull
       - stump
       - stung
       - stunk
+      - stuns
+      - stuns
       - stunt
-      - style
+      - stupa
+      - stupe
       - suave
+      - sucks
+      - sucre
+      - sudor
+      - sudsy
+      - suede
+      - suety
       - sugar
       - suing
+      - suint
       - suite
+      - suits
+      - sulci
+      - sulfa
       - sulky
+      - sulks
       - sully
       - sumac
+      - summa
+      - sumps
       - sunny
+      - sunup
       - super
+      - suppl
+      - supra
+      - surah
+      - sural
+      - suras
+      - surds
       - surer
+      - surfs
       - surge
+      - surgy
       - surly
+      - surra
       - sushi
+      - sutra
+      - swabs
+      - swage
+      - swags
+      - swain
+      - sways
+      - swale
       - swami
       - swamp
+      - swank
+      - swans
+      - swaps
+      - sward
       - swarm
+      - swart
       - swash
       - swath
+      - swats
       - swear
       - sweat
+      - swede
       - sweep
       - sweet
       - swell
       - swept
       - swift
+      - swigs
       - swill
+      - swims
       - swine
       - swing
+      - swink
+      - swipe
       - swirl
       - swish
+      - swizz
       - swoon
       - swoop
       - sword
       - swore
       - sworn
+      - swots
       - swung
-      - synod
-      - syrup
       - tabby
+      - tabes
+      - tabla
       - table
       - taboo
+      - tabor
+      - tacet
+      - tache
       - tacit
       - tacky
+      - tacks
+      - tacos
       - taffy
+      - tafia
+      - taiga
+      - tails
       - taint
+      - tayra
       - taken
       - taker
+      - takes
+      - takin
+      - talas
+      - taler
+      - tales
+      - talky
+      - talks
       - tally
       - talon
+      - taluk
+      - talus
+      - tamed
       - tamer
-      - tango
+      - tames
+      - tamis
+      - tammy
+      - tamps
       - tangy
+      - tango
+      - tangs
+      - tanka
+      - tanks
+      - tansy
+      - tanto
+      - tapas
+      - taped
       - taper
+      - tapes
       - tapir
+      - tapis
       - tardy
+      - tared
+      - tares
+      - targe
+      - tarns
+      - taros
       - tarot
+      - tarps
+      - tarry
+      - tarsi
+      - tarty
+      - tarts
+      - tasks
+      - tasse
       - taste
       - tasty
+      - tater
       - tatty
       - taunt
+      - taupe
       - tawny
+      - taxed
+      - taxer
+      - taxes
+      - taxis
+      - taxon
+      - tazza
       - teach
+      - teaks
+      - teals
+      - teams
       - teary
+      - tears
       - tease
+      - teats
+      - techy
       - teddy
+      - teems
+      - teeny
+      - teens
       - teeth
+      - teleg
+      - teleg
+      - telex
+      - telic
+      - telly
+      - tells
+      - tempi
       - tempo
+      - temps
+      - tempt
+      - tench
+      - tends
       - tenet
+      - tenia
+      - tenne
+      - tenno
+      - tenon
       - tenor
       - tense
       - tenth
+      - tents
       - tepee
       - tepid
+      - terce
+      - terms
+      - terns
       - terra
+      - terry
       - terse
+      - tesla
+      - testa
       - testy
+      - tests
+      - teths
+      - tetra
+      - texts
+      - thane
       - thank
+      - thaws
+      - thebe
+      - theca
       - theft
-      - their
+      - thegn
       - theme
-      - there
-      - these
+      - theol
+      - theol
+      - therm
       - theta
+      - thewy
+      - thews
       - thick
       - thief
       - thigh
+      - thill
+      - thyme
+      - thine
       - thing
       - think
+      - thins
+      - thiol
       - third
+      - thole
       - thong
       - thorn
-      - those
+      - thorp
+      - thous
       - three
       - threw
       - throb
+      - throe
       - throw
       - thrum
+      - thuds
+      - thugs
+      - thuya
+      - thuja
       - thumb
       - thump
-      - thyme
+      - thunk
       - tiara
       - tibia
+      - tical
+      - ticks
       - tidal
+      - tided
+      - tides
+      - tiers
+      - tiffs
       - tiger
       - tight
+      - tigon
+      - tying
+      - tykes
       - tilde
+      - tiled
+      - tiler
+      - tiles
+      - tills
+      - tilth
+      - tilts
+      - timed
       - timer
+      - times
       - timid
+      - tinct
+      - tinct
+      - tinea
+      - tined
+      - tines
+      - tinge
+      - tings
+      - tinny
+      - tints
+      - typal
+      - typed
+      - types
+      - typos
       - tipsy
+      - tired
+      - tires
+      - tyros
       - titan
+      - titer
       - tithe
+      - titis
       - title
+      - titty
+      - tizzy
+      - toady
+      - toads
       - toast
       - today
       - toddy
+      - toffs
+      - togas
+      - toyed
+      - toile
+      - toils
+      - tokay
+      - toked
       - token
+      - tokes
+      - tolan
+      - tolar
+      - tolyl
+      - tolly
+      - tolls
+      - tolus
+      - tombs
+      - tomes
       - tonal
+      - toned
+      - toner
+      - tones
       - tonga
+      - tongs
       - tonic
+      - tonne
+      - tonus
+      - tools
       - tooth
+      - toots
       - topaz
+      - toped
+      - topee
+      - toper
+      - topes
       - topic
+      - topis
+      - topog
+      - topog
+      - toque
+      - torah
       - torch
+      - torii
+      - torse
+      - torsk
       - torso
+      - torte
+      - torts
       - torus
       - total
+      - toted
       - totem
+      - toter
+      - totes
       - touch
       - tough
+      - tours
+      - touts
+      - towed
       - towel
       - tower
+      - towns
       - toxic
       - toxin
       - trace
@@ -2096,193 +5943,512 @@ nlu:
       - trade
       - trail
       - train
+      - trays
       - trait
       - tramp
+      - trams
+      - trans
+      - trans
+      - traps
       - trash
+      - trass
+      - trave
       - trawl
       - tread
+      - treas
       - treat
+      - treed
+      - treen
+      - trees
+      - treys
+      - treks
       - trend
+      - tress
+      - trews
       - triad
       - trial
       - tribe
       - trice
       - trick
       - tried
+      - trier
+      - tries
+      - trike
+      - trill
+      - tryma
+      - trims
+      - trine
+      - trios
       - tripe
+      - trips
+      - tryst
       - trite
+      - troat
+      - troys
       - troll
+      - tromp
+      - trona
       - troop
       - trope
+      - troth
+      - trots
       - trout
       - trove
+      - trows
       - truce
       - truck
+      - trued
       - truer
+      - trues
+      - trugs
       - truly
+      - trull
       - trump
       - trunk
       - truss
       - trust
       - truth
-      - tryst
       - tubal
+      - tubas
+      - tubby
+      - tubed
       - tuber
+      - tubes
+      - tucks
+      - tufty
+      - tufts
       - tulip
       - tulle
+      - tumid
+      - tummy
       - tumor
+      - tunas
+      - tuned
+      - tuner
+      - tunes
       - tunic
+      - tunny
+      - tuple
+      - tuque
       - turbo
+      - turds
+      - turfy
+      - turfs
+      - turns
+      - turps
+      - tushy
+      - tusks
       - tutor
+      - tutti
+      - tutty
+      - tutus
+      - tuxes
+      - twain
       - twang
+      - twats
       - tweak
       - tweed
+      - tween
       - tweet
+      - twerp
       - twice
+      - twigs
+      - twill
       - twine
+      - twink
+      - twins
       - twirl
       - twist
+      - twits
       - twixt
-      - tying
       - udder
+      - uhlan
+      - ukase
       - ulcer
+      - ulema
+      - ulnae
+      - ulnar
       - ultra
+      - umbel
+      - umber
       - umbra
+      - umiak
+      - umped
+      - unapt
+      - unarm
+      - unbar
+      - unbid
+      - uncap
       - uncle
       - uncut
-      - under
       - undid
       - undue
       - unfed
       - unfit
+      - unfix
       - unify
       - union
       - unite
       - unity
+      - units
+      - unjam
+      - unlay
       - unlit
+      - unman
       - unmet
+      - unpeg
+      - unpen
+      - unpin
+      - unrig
+      - unsay
       - unset
+      - unsex
       - untie
-      - until
       - unwed
+      - unwon
       - unzip
+      - upend
+      - upped
       - upper
       - upset
       - urban
+      - uredo
+      - urged
+      - urger
+      - urges
+      - urial
       - urine
       - usage
+      - users
       - usher
       - using
       - usual
+      - usury
       - usurp
+      - uteri
       - utile
       - utter
+      - uveas
+      - uvula
+      - vagal
       - vague
+      - vagus
+      - vales
       - valet
       - valid
       - valor
+      - valse
       - value
       - valve
+      - vamps
+      - vanda
+      - vanes
       - vapid
       - vapor
+      - varas
+      - varia
+      - varix
+      - varus
+      - varve
+      - vases
+      - vasty
+      - vasts
+      - vatic
       - vault
       - vaunt
+      - vedic
+      - veeps
+      - veery
+      - veers
       - vegan
+      - veils
+      - veiny
+      - veins
+      - velar
+      - velds
+      - velum
+      - venae
+      - venal
+      - vends
+      - venge
+      - venin
       - venom
+      - vents
       - venue
+      - verbs
       - verge
+      - versa
       - verse
       - verso
+      - verst
+      - vertu
       - verve
+      - vesta
+      - vests
+      - vetch
+      - veter
+      - vexed
+      - vexes
+      - vials
+      - viand
+      - vibes
       - vicar
+      - viced
+      - vices
       - video
+      - viewy
+      - views
       - vigil
       - vigor
+      - vying
+      - viler
       - villa
+      - villi
+      - vimen
+      - vines
+      - vinic
       - vinyl
       - viola
+      - viols
       - viper
       - viral
+      - vireo
+      - virga
+      - virtu
       - virus
+      - visas
+      - vised
+      - vises
       - visit
       - visor
       - vista
+      - vitae
       - vital
+      - vitta
+      - vivas
       - vivid
       - vixen
+      - vocab
       - vocal
       - vodka
       - vogue
       - voice
+      - voids
       - voila
+      - voile
+      - volar
+      - voles
+      - volts
+      - volva
+      - vomer
       - vomit
+      - voted
       - voter
+      - votes
       - vouch
+      - vouge
+      - vowed
       - vowel
-      - vying
+      - vower
+      - vulva
+      - wacke
       - wacky
+      - wacko
+      - wacks
+      - waded
+      - wader
+      - wades
+      - wadge
+      - wadis
       - wafer
+      - wafts
+      - waged
       - wager
+      - wages
       - wagon
+      - wahoo
+      - waifs
+      - wails
+      - wains
       - waist
+      - waits
       - waive
+      - waked
+      - waken
+      - wakes
+      - waldo
+      - waled
+      - wales
+      - walks
+      - wally
+      - walls
       - waltz
+      - wands
+      - waned
+      - wanes
+      - wanly
+      - wants
+      - wards
+      - wares
+      - warms
+      - warns
+      - warps
       - warty
+      - warts
+      - washy
+      - wasps
       - waste
       - watch
       - water
+      - watts
+      - waved
       - waver
+      - waves
+      - waxed
       - waxen
+      - waxes
+      - weald
+      - weals
+      - weans
       - weary
+      - wears
       - weave
+      - webby
+      - weber
       - wedge
       - weedy
+      - weeds
+      - weeks
+      - weeny
+      - weens
+      - weepy
+      - weeps
+      - weest
+      - wefts
       - weigh
       - weird
-      - welch
+      - weirs
+      - wekas
+      - welds
+      - welly
+      - wells
       - welsh
+      - welts
+      - wench
+      - wends
+      - wersh
+      - wetly
       - whack
       - whale
+      - whams
+      - whaps
       - wharf
+      - whats
+      - wheal
       - wheat
       - wheel
+      - wheen
+      - whelk
+      - whelm
       - whelp
-      - where
-      - which
+      - whens
+      - whets
       - whiff
-      - while
+      - whims
       - whine
       - whiny
+      - whins
+      - whips
+      - whipt
       - whirl
+      - whirs
+      - whish
       - whisk
+      - whist
       - white
+      - whity
+      - whits
+      - whizz
       - whole
+      - whomp
       - whoop
+      - whops
+      - whore
+      - whorl
       - whose
+      - whoso
+      - whsle
+      - whsle
+      - wicks
       - widen
       - wider
+      - wides
       - widow
       - width
       - wield
       - wight
+      - wilds
+      - wiled
+      - wiles
       - willy
+      - wills
+      - wilts
       - wimpy
+      - wimps
       - wince
       - winch
       - windy
+      - winds
+      - wined
+      - wines
+      - wings
+      - winks
+      - winos
+      - winze
+      - wiped
+      - wiper
+      - wipes
+      - wired
+      - wirer
+      - wires
+      - wirra
+      - wised
       - wiser
+      - wises
       - wispy
+      - wisps
       - witch
+      - withe
+      - withy
       - witty
+      - wived
+      - wives
+      - wizen
+      - wizes
+      - woald
+      - wodge
       - woken
+      - wolds
+      - wolfs
       - woman
+      - wombs
       - women
+      - wonky
+      - wonks
       - woody
+      - woods
+      - wooed
       - wooer
-      - wooly
+      - woofs
+      - wools
+      - woops
       - woozy
       - wordy
+      - words
+      - works
       - world
+      - wormy
+      - worms
       - worry
       - worse
       - worst
@@ -2290,24 +6456,58 @@ nlu:
       - would
       - wound
       - woven
+      - wowed
       - wrack
+      - wraps
       - wrath
       - wreak
       - wreck
+      - wrens
       - wrest
+      - wryer
+      - wryly
       - wring
       - wrist
       - write
+      - writs
       - wrong
       - wrote
+      - wroth
       - wrung
-      - wryly
-      - yacht
-      - yearn
-      - yeast
-      - yield
-      - young
-      - youth
+      - wurst
+      - xebec
+      - xenia
+      - xenon
+      - xeric
+      - xerox
+      - xylem
+      - xylol
+      - xviii
+      - xxiii
+      - zayin
+      - zaire
+      - zamia
+      - zappy
+      - zarfs
+      - zazen
+      - zebec
       - zebra
+      - zebus
+      - zeros
       - zesty
+      - zests
+      - zetas
+      - zibet
+      - zilch
+      - zincs
+      - zingy
+      - zings
+      - zippy
+      - zitis
+      - zloty
       - zonal
+      - zoned
+      - zones
+      - zooid
+      - zooms
+      - zoril

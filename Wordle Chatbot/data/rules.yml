@@ -10,7 +10,23 @@ rules:
   - action: utter_welcome_message
   - action: utter_pick_word
   - action: action_pick_random_word
-  - action: utter_repeat_target
+  - action: utter_ready_to_start
+
+- rule: ask for POS hint
+  condition:
+  - slot_was_set:
+    - target: true
+  steps:
+  - intent: ask_POS
+  - action: action_get_POS
+
+- rule: ask for some answers
+  condition:
+  - slot_was_set:
+    - target: true
+  steps:
+  - intent: ask_for_answers
+  - action: action_suggest_words
 
 
 - rule: restart wordle
@@ -20,10 +36,15 @@ rules:
   steps:
     - intent: affirm
     - action: action_reset_wordle
-    - action: utter_welcome_message
-    - action: utter_pick_word
     - action: action_pick_random_word
-    - action: utter_repeat_target
+    - action: utter_reset_message
     - action: action_reset_game_end
-
+    
+- rule: end wordle
+  condition:
+  - slot_was_set:
+    - game_end: true
+  steps:
+    - intent: deny
+    - action: utter_end_msg
 

@@ -16,6 +16,10 @@ import time
 import re
 import datetime
 from pathlib import Path
+import nltk
+from nltk.corpus import wordnet as wn
+from nltk import FreqDist
+
 
 class Backgrounds:
       ok = '\33[42m'
@@ -107,7 +111,7 @@ class ActionGetUserName(Action):
 
 def getWordBank():
       word_bank = list()
-      with open('actions/Resources/word_bank.txt') as topo_file:
+      with open('actions/Resources/word_bank/word_bank.txt') as topo_file:
          for line in topo_file:
             line = line.replace('\n', '')
             word_bank.append(line)
@@ -124,9 +128,7 @@ class ActionPickRandomWord(Action):
       word_bank = getWordBank()
 
       random.seed(time.time())
-      target_word = word_bank[random.randint(0, len(word_bank))]
-      dispatcher.utter_message(text="I picked the word {}".format(target_word))
-      
+      target_word = word_bank[random.randint(0, len(word_bank))]      
       user_file_increment_value(user_file, "total_num_games")
       add_to_history_file(user_file_get_value(user_file, "answer_history_file"), target_word)
 
@@ -172,7 +174,6 @@ class ActionMakeGuess(Action):
 
       current_board += [current_guess]
       guess_num = len(current_board)
-      print(guess_num)
 
       print_board(dispatcher, current_board, target_word)
       
@@ -190,19 +191,171 @@ class ActionMakeGuess(Action):
 
       return [SlotSet("guess_list", current_board)]
 
-class ActionMakeGuess(Action):
+class ActionResetWordle(Action):
    def name(self) -> Text:
       return "action_reset_wordle"
       
    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
       user_file = tracker.get_slot("user_file")
 
-      dispatcher.utter_message(text='Resetting wordle')
+      dispatcher.utter_message(text='I am resetting the wordle for you.')
       return [SlotSet("guess", None), SlotSet("target", None), SlotSet("guess_list", []), SlotSet("guess_num", 0)]
 
-class ActionMakeGuess(Action):
+class ActionResetGameStatus(Action):
    def name(self) -> Text:
       return "action_reset_game_end"
       
    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
       return [SlotSet("game_end", None)]
+
+def get_most_common_pos(word: str) -> str:
+   pos_dict = {}
+   for ss in wn.synsets(word):
+      pos = ss.pos()
+      if pos not in pos_dict:
+         pos_dict[pos] = 1
+      else:
+         pos_dict[pos] += 1
+
+   pos_list = sorted(pos_dict, key=pos_dict.get, reverse=True)
+   if len(pos_list) != 0:
+      pos = pos_list[0]
+      if pos == 'n':
+         pos = 'noun'
+      elif pos == 'v':
+         pos = 'verb'
+      elif pos == 'a' or pos == 's':
+         pos = 'adjective'
+      elif pos == 'r':
+         pos = 'adverb'
+      else:
+         pos = ''
+   else:
+      pos = ''
+
+   return pos
+
+class ActionMakeGuess(Action):
+   def name(self) -> Text:
+      return "action_get_POS"
+      
+   def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+      target_word = tracker.get_slot("target")
+      pos = get_most_common_pos(target_word)
+
+      if pos != '':
+         dispatcher.utter_message(text='The most common part of speech of the target word is a(n) {}.'.format(pos))
+      else:
+         dispatcher.utter_message(text="I'm sorry, I can't seem to find the part of speech for this word.")
+
+      return []
+
+
+
+
+class ActionSuggestWords(Action):
+   correct_letters = [[], [".", ".", ".", ".", "."]]
+   maybe_letters = []
+   invalid_letters = [[], {0: [], 1: [], 2: [], 3: [], 4: []}]
+
+   def name(self) -> Text:
+      return "action_suggest_words"
+      
+   def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+      guess_list = tracker.get_slot("guess_list")
+      target = tracker.get_slot("target")
+      word_list = getWordBank()
+
+      self.correct_letters = [[], [".", ".", ".", ".", "."]]
+      self.maybe_letters = []
+      self.invalid_letters = [[], {0: [], 1: [], 2: [], 3: [], 4: []}]
+
+      suggested_words = self.get_current_wordle_answers(guess_list, target, word_list)
+
+      dispatcher.utter_message(text='I suggest trying ' + suggested_words)
+      return []
+
+
+   def get_current_wordle_answers(self, list_of_guesses, target_word, current_word_list):
+      self.assign_letters(list_of_guesses, target_word)
+      validated_words = self.remove_invalid_words(current_word_list, self.correct_letters, self.maybe_letters, self.invalid_letters)
+
+      if len(validated_words) < 5:
+         sugg = self.list_to_string(validated_words)
+      else:
+         validated_words = self.rank_words(validated_words)
+         sugg = self.list_to_string(validated_words[:5])
+      return(sugg)
+
+   def assign_letters(self, input_guesses, current_target):
+      for input_guess in input_guesses:
+         for index, current_character in enumerate(input_guess):
+            if input_guess[index] == current_target[index]:
+                if current_character not in self.correct_letters[0]:
+                    self.correct_letters[0] += current_character
+                self.correct_letters[1][index] = current_character
+                if current_character in self.maybe_letters:
+                    self.maybe_letters.remove(current_character)
+                if current_character in self.invalid_letters[0]:
+                    self.invalid_letters[0].remove(current_character)
+            elif input_guess[index] in current_target:
+                if current_character not in self.maybe_letters:
+                    self.maybe_letters += current_character
+                self.invalid_letters[1][index] += current_character
+                if current_character in self.invalid_letters[0]:
+                    self.invalid_letters[0].remove(current_character)
+            else:
+                if current_character in self.invalid_letters[1][index]:
+                    continue
+                elif current_character in self.correct_letters[0]:
+                    self.invalid_letters[1][index] += current_character
+                elif current_character not in self.invalid_letters[0] and current_character not in self.maybe_letters:
+                    self.invalid_letters[0] += current_character
+                    self.invalid_letters[1][index] += current_character
+
+   def remove_invalid_words(self, current_word_list, correct_letters, maybe_letters, invalid_letters) -> list:
+      new_list = []
+      for word in current_word_list:
+         valid = True
+         for index, letter in enumerate(word):
+            if letter != correct_letters[1][index] and correct_letters[1][index] != ".":
+               valid = False
+               break
+            elif letter in invalid_letters[0] or letter in invalid_letters[1][index]:
+               valid = False
+               break
+         if not all(letter in word for letter in maybe_letters):
+            valid = False
+         if valid:
+            new_list.append(word)
+      return new_list
+
+   def rank_words(self, validated_words) -> list:
+      # Get letter frequency
+      char_freq_list = list()
+      for i in range(5):
+         char_freq_list.append(FreqDist([letter for letter in ''.join([letter[i] for letter in validated_words])]))
+      
+      # Score the word  
+      new_list = [[]]
+      for w_index, w in enumerate(validated_words):
+         score = 0
+         used_characters = ''
+         for index, ch in enumerate(w):
+            score_modifier = 1 if ch not in used_characters and validated_words else 0.75
+            used_characters += ch
+            score = score + (char_freq_list[index].get(ch) / len(validated_words) * score_modifier)
+         new_list.insert(w_index, [w, score])
+      new_list.pop()
+
+      # Return 5 most common
+      return [word[0] for word in sorted(new_list, key=lambda x: x[1], reverse=True)[:5]]
+
+   def list_to_string(self, words: list):
+      res = ''
+      if len(words) > 1:
+         for index in range(len(words) - 1):
+            res += words[index] + ', '
+         res += 'and ' + words[len(words) - 1]
+      return res
+
