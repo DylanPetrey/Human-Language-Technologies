@@ -29,6 +29,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - yes i would
+    - sounds great
 
 - intent: deny
   examples: |
