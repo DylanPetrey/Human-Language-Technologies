@@ -19,7 +19,6 @@ nlu:
     - greetings
     - hi, how are you
     - hello my friend
-    - what happening
 
 - intent: affirm
   examples: |
