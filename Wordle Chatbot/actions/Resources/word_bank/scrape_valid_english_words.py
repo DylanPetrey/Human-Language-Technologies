@@ -4,6 +4,9 @@ from bs4 import BeautifulSoup
 import enchant
 import re
 from urllib import request
+from profanity import profanity
+from nltk.corpus import wordnet as wn
+
 
 links_list = set()
 words = set()
@@ -50,7 +53,7 @@ def crawl(url):
                             end = int(time.time() - start)
                             print(str(len(words)) + ' ' + str(end))
                             print(links, "->", url_new)
-                            if time.time() - start > 10 * 60:
+                            if time.time() - start > 20 * 60:
                                 return
             except:
                 break
@@ -69,7 +72,6 @@ def write_to_file(data):
 
 def build_knowledge_base():
     yaml = list()
-
     yaml.append('version: "3.1"\n')
     yaml.append('nlu:\n')
     yaml.append('  - lookup: valid_guess\n')
@@ -83,8 +85,27 @@ def build_knowledge_base():
         yfile.write("".join(yaml))
 
 
+def checkIfRomanNumeral(numeral):
+    numeral = numeral.upper()
+    validRomanNumerals = ["M", "D", "C", "L", "X", "V", "I", "(", ")"]
+    valid = True
+    for letters in numeral:
+        if letters not in validRomanNumerals:
+            return False
+    for ss in wn.synsets(numeral):
+        lem = ss.lemmas()[0].name()
+        if '-' in lem or 'teen' in lem or lem.isdigit():
+            valid = True
+        else:
+            valid = False
+            break
+        print(str(valid) + ' ' + numeral)
+    return valid
+
+
 def clean_words(w):
-    tokens = [w.lower() for w in list(words) if d.check(w)]
+    tokens = [w.lower() for w in list(words) if d.check(w) and not profanity.contains_profanity(w) or not checkIfRomanNumeral(w)]
+    tokens.sort() 
     print(len(tokens))
     return tokens
 
