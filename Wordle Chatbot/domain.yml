@@ -7,6 +7,7 @@ intents:
   - ask_POS
   - user_guess
   - ask_for_answers
+  - ask_for_stats
 
 actions:
   - action_get_user_name
@@ -16,6 +17,9 @@ actions:
   - action_reset_game_end
   - action_get_POS
   - action_suggest_words
+  - action_get_user_stats
+  - action_custom_hello
+  - action_custom_start
 
 entities:
   - valid_guess
@@ -27,6 +31,11 @@ slots:
       entity: valid_guess
   target:
     type: text
+    mappings:
+    - type: custom
+  has_target:
+    type: bool
+    initial_value: false
     mappings:
     - type: custom
   user_file:
@@ -47,8 +56,22 @@ slots:
     type: bool
     mappings:
     - type: custom
+  is_start:
+    type: bool
+    initial_value: true
+    mappings:
+    - type: custom
+
 
 responses:
+  utter_greet:
+  - text: "Hello!"
+  - text: "Hi!"
+  - text: "Greetings!"
+  - text: "Hi there!"
+  - text: "Yo!"
+  - text: "Hey there!"
+
   utter_welcome_message:
   - text: "Start by guessing a word of 5 characters. You can try to guess the correct word up to 6 times."
 
@@ -59,10 +82,13 @@ responses:
   - text: You guessed {guess}
 
   utter_ready_to_start:
-  - text: "I have picked a word. Please guess with a 5 letter word."
+  - text: "Please guess with a 5 letter word."
   
   utter_reset_message:
   - text: "The game has been reset. Feel free to start guessing!"
+
+  utter_end_guess:
+  - text: "You already finished the game! Would you like to play again?"
 
   utter_end_msg:
   - text: "Ok! Thank you for playing. Say yes if you change your mind."

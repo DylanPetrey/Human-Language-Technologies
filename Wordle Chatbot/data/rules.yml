@@ -3,14 +3,25 @@ version: "3.1"
 rules:
 
 - rule: get user information
-  conversation_start: true 
+  condition:
+  - slot_was_set:
+    - is_start: true
   steps:
   - intent: greet
   - action: action_get_user_name
   - action: utter_welcome_message
   - action: utter_pick_word
   - action: action_pick_random_word
-  - action: utter_ready_to_start
+  - action: action_custom_start
+
+- rule: say hello
+  condition:
+  - slot_was_set:
+    - is_start: false
+  steps:
+  - intent: greet
+  - action: action_custom_hello
+
 
 - rule: ask for POS hint
   condition:
@@ -48,3 +59,8 @@ rules:
     - intent: deny
     - action: utter_end_msg
 
+- rule: ask for stats
+  steps:
+  - intent: ask_for_stats
+  - action: action_get_user_stats
+    

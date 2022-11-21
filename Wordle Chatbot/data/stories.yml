@@ -2,10 +2,20 @@ version: "3.1"
 
 stories:
 
-- story: make guess
+- story: make wordle guess
   steps:
-  - intent: user_guess
-  - action: action_make_guess
-  - slot_was_set:
-    - game_end: false
+    - intent: user_guess
+    - slot_was_set:
+      - has_target: true
+    - action: action_make_guess
 
+
+- story: make wordle guess with no target
+  steps:
+    - intent: user_guess
+    - slot_was_set:
+      - has_target: false
+      - guess: true
+    - action: action_get_user_name
+    - action: action_pick_random_word
+    - action: action_make_guess
