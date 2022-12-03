@@ -62,11 +62,11 @@ nlu:
 
 - intent: ask_for_answers
   examples: |
-   - I am stuck
+   - I can't think of anything
    - I can't think of any words
    - what are some words I can use
    - do you have any ideas
-   - please help me 
+   - please give me words
 
 - intent: ask_for_stats
   examples: |

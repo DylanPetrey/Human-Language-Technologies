@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Text
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet, AllSlotsReset, FollowupAction
+from rasa_sdk.events import SlotSet, AllSlotsReset, FollowupAction, ConversationPaused
 
 import fileinput
 import sys
@@ -178,10 +178,7 @@ class ActionPickRandomWord(Action):
       user_file_increment_value(user_file, "total_num_games")
       add_to_history_file(user_file_get_value(user_file, "answer_history_file"), target_word)
 
-      dispatcher.utter_message(text='I have selected a word.')
-      
-
-      return [SlotSet("target", target_word), SlotSet("has_target", True)]
+      return [SlotSet("target", target_word)]
 
 
 class ActionMakeGuess(Action):
@@ -196,7 +193,7 @@ class ActionMakeGuess(Action):
       user_file = tracker.get_slot("user_file")
       game_end = tracker.get_slot("game_end")
 
-      if current_guess == None:
+      if current_guess == None or target_word == None:
          return []
       
       if game_end:
@@ -205,7 +202,7 @@ class ActionMakeGuess(Action):
          return []
 
       if len(current_board) != 0 and current_guess == current_board[len(current_board)-1]:
-         dispatcher.utter_message(text='Im sorry, but that word is not in my word bank.')
+         dispatcher.utter_message(text="I'm sorry, but that word is not in my word bank.")
          return []
 
       current_board += [current_guess]
@@ -215,16 +212,16 @@ class ActionMakeGuess(Action):
       
       add_to_history_file(user_file_get_value(user_file, "guess_history_file"), current_guess)
       
-      if current_guess == target_word and not guess_num > 6:
+      if current_guess == target_word and not guess_num > 7:
          user_file_increment_value(user_file, 'correct_guess_' + str(guess_num))
          user_file_increment_value(user_file, 'total_num_wins')
          dispatcher.utter_message(text='Congrats! You found the word! Would you like to play again?')
          return[SlotSet("game_end", True), SlotSet("guess", None)]
       elif guess_num > 6:
-         dispatcher.utter_message(text='You lost! Would you like to play again?')
+         dispatcher.utter_message(text='You lost! The correct word was {}. Would you like to play again?'.format(target_word))
          return [SlotSet("guess_list", current_board), SlotSet("game_end", True), SlotSet("guess", None)]
 
-      return [SlotSet("guess_list", current_board), SlotSet("guess", None)]
+      return [SlotSet("guess_list", current_board), SlotSet("guess", None), SlotSet("guess", None), SlotSet("has_target", True)]
 
    def print_board(self, dispatcher: CollectingDispatcher, guess_list, target):
       for word in guess_list:
@@ -251,7 +248,6 @@ class ActionCustomHello(Action):
       current_guess = tracker.get_slot("guess")
       
       if current_guess != None:
-         match = re.search('^\w{5}$', current_guess)      
          if match:
             return [FollowupAction('action_make_guess')]
 
@@ -263,8 +259,7 @@ class ActionCustomsStart(Action):
       return "action_custom_start"
    
    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-      dispatcher.utter_message(response = "utter_ready_to_start")
-      return [SlotSet("is_start", False), SlotSet("guess", None)]
+      return [SlotSet("is_start", False), SlotSet("guess", None), SlotSet("has_target", True)]
 
 
 class ActionResetWordle(Action):
@@ -273,10 +268,17 @@ class ActionResetWordle(Action):
    
    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
       user_file = tracker.get_slot("user_file")
-      is_start = tracker.get_slot("is_start")
 
       dispatcher.utter_message(text='I am resetting the wordle for you.')
-      return [AllSlotsReset(), SlotSet("user_file", user_file), SlotSet("is_start", False)]
+      return [AllSlotsReset(), SlotSet("user_file", user_file), SlotSet("is_start", False), SlotSet("game_end", True)]
+
+class ActionGameEnd(Action):
+   def name(self) -> Text:
+      return "action_custom_end"
+
+   def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+      dispatcher.utter_message(text='Thank you for playing! Please come again soon.')
+      return [ConversationPaused()]
 
 
 class ActionResetGameStatus(Action):
@@ -285,6 +287,8 @@ class ActionResetGameStatus(Action):
    
    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
       return [SlotSet("game_end", None)]
+      dispatcher.utter_message(text='Game has been reset. You are ready to begin guessing.')
+      return [AllSlotsReset(), SlotSet("user_file", user_file), SlotSet("is_start", False), SlotSet("target_word", target_word), SlotSet("has_target", True)]
 
 class ActionMakeGetPos(Action):
    def name(self) -> Text:
@@ -353,20 +357,21 @@ class ActionSuggestWords(Action):
 
    def get_current_wordle_answers(self, list_of_guesses, target_word, current_word_list):
       self.assign_letters(list_of_guesses, target_word)
+
       validated_words = self.remove_invalid_words(current_word_list, self.correct_letters, self.maybe_letters, self.invalid_letters)
 
-      if len(validated_words) < 5:
-         validated_words = self.rank_words(validated_words)
-         sugg = self.list_to_string(validated_words)
-      else:
+      if len(validated_words) > 5:
          validated_words = self.rank_words(validated_words)
          sugg = self.list_to_string(validated_words[:5])
+      else:
+         validated_words = self.rank_words(validated_words)
+         sugg = self.list_to_string(validated_words)
       return(sugg)
 
    def assign_letters(self, input_guesses, current_target):
       for input_guess in input_guesses:
          for index, current_character in enumerate(input_guess):
-            if input_guess[index] == current_target[index]:
+            if current_character == current_target[index]:
                 if current_character not in self.correct_letters[0]:
                     self.correct_letters[0] += current_character
                 self.correct_letters[1][index] = current_character
@@ -374,7 +379,7 @@ class ActionSuggestWords(Action):
                     self.maybe_letters.remove(current_character)
                 if current_character in self.invalid_letters[0]:
                     self.invalid_letters[0].remove(current_character)
-            elif input_guess[index] in current_target:
+            elif current_character in current_target:
                 if current_character not in self.maybe_letters:
                     self.maybe_letters += current_character
                 self.invalid_letters[1][index] += current_character
@@ -410,7 +415,7 @@ class ActionSuggestWords(Action):
       # Get letter frequency
       char_freq_list = list()
       for i in range(5):
-         char_freq_list.append(FreqDist([letter for letter in ''.join([letter[i] for letter in validated_words])]))
+         char_freq_list.append(FreqDist([letter for letter in ''.join([word[i] for word in validated_words])]))
       
       # Score the word  
       new_list = [[]]
@@ -429,9 +434,14 @@ class ActionSuggestWords(Action):
 
    def list_to_string(self, words: list):
       res = ''
-      if len(words) > 1:
-         for index in range(len(words) - 1):
-            res += words[index] + ', '
-         res += 'and ' + words[len(words) - 1]
+      num_words = min(len(words), 5)
+      for word in words:
+         res += word
+         if num_words > 1:
+            res += ', '
+            num_words -= 1
+            if num_words == 1:
+               res += 'and '
+      
       return res
 

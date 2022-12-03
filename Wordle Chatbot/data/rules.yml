@@ -9,9 +9,9 @@ rules:
   steps:
   - intent: greet
   - action: action_get_user_name
-  - action: utter_welcome_message
-  - action: utter_pick_word
   - action: action_pick_random_word
+  - action: utter_pick_word
+  - action: utter_welcome_message
   - action: action_custom_start
 
 - rule: say hello
@@ -57,9 +57,12 @@ rules:
     - game_end: true
   steps:
     - intent: deny
-    - action: utter_end_msg
+    - action: action_custom_end
 
 - rule: ask for stats
+  condition:
+  - slot_was_set:
+    - user_file: true
   steps:
   - intent: ask_for_stats
   - action: action_get_user_stats

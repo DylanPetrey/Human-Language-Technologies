@@ -20,6 +20,7 @@ actions:
   - action_get_user_stats
   - action_custom_hello
   - action_custom_start
+  - action_custom_end
 
 entities:
   - valid_guess
@@ -35,7 +36,6 @@ slots:
     - type: custom
   has_target:
     type: bool
-    initial_value: false
     mappings:
     - type: custom
   user_file:
@@ -73,7 +73,11 @@ responses:
   - text: "Hey there!"
 
   utter_welcome_message:
-  - text: "Start by guessing a word of 5 characters. You can try to guess the correct word up to 6 times."
+  - text: "The goal is to try and guess a word that I have picked out in 6 guesses or less. 
+          \nYour guess can be any 5-letter word. I will tell you how each character related to the target word.
+          \nIf any letter is highlighted in yellow, that means that the letter is hidden in the word. 
+          \nIf any letter is highlighted green, then that letter is in the correct location. 
+          \nIf the letter is highlighted red, that letter is not in the target."
 
   utter_pick_word:
   - text: "Let me pick out a word real quick."

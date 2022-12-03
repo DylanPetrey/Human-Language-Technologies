@@ -15,7 +15,7 @@ stories:
     - intent: user_guess
     - slot_was_set:
       - has_target: false
-      - guess: true
     - action: action_get_user_name
     - action: action_pick_random_word
+    - action: utter_welcome_message
     - action: action_make_guess
