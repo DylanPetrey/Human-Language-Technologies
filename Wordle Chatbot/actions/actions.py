@@ -248,6 +248,7 @@ class ActionCustomHello(Action):
       current_guess = tracker.get_slot("guess")
       
       if current_guess != None:
+         match = re.search(r'^\w{5}$', current_guess)
          if match:
             return [FollowupAction('action_make_guess')]
 
