@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-valid_guess",
+      "2": "I-valid_guess",
+      "3": "L-valid_guess",
+      "4": "U-valid_guess",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-valid_guess": 1,
+      "I-valid_guess": 2,
+      "L-valid_guess": 3,
+      "U-valid_guess": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]
