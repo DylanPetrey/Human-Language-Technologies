@@ -1,8 +1,0 @@
-{
-  "rule_only_slots": [
-    "target",
-    "user_file",
-    "game_end"
-  ],
-  "rule_only_loops": []
-}
